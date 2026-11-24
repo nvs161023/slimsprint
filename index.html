@@ -99,19 +99,31 @@
  const observer=('IntersectionObserver' in window)?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12}):null;
  document.querySelectorAll('.reveal').forEach(el=>{if(observer)observer.observe(el);else el.classList.add('visible')});
  form.addEventListener('submit',async e=>{
-  e.preventDefault();const btn=document.getElementById('lead-submit'),msg=document.getElementById('form-message');
-  btn.disabled=true;btn.textContent='Отправляем…';msg.textContent='';
-  try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-   const data=await response.json();if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Не удалось принять заявку. Проверь подтверждение адреса FormSubmit и попробуй ещё раз.');
-   const formCard=form.closest('.form-card');
+  e.preventDefault();
+  const btn=document.getElementById('lead-submit');
+  const msg=document.getElementById('form-message');
+  const formCard=form.closest('.form-card');
+  btn.disabled=true;
+  btn.textContent='Отправляем…';
+  msg.textContent='Проверяем отправку…';
+  msg.style.color='#68736a';
+  try{
+   const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+   let data;
+   try{data=await response.json()}catch(parseError){throw new Error('Сервис вернул непонятный ответ. Заявка могла не отправиться — попробуй ещё раз.')}
+   if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Не удалось отправить заявку. Проверь соединение и попробуй ещё раз.');
    formCard.innerHTML='<div class="success-state" role="status" aria-live="polite" tabindex="-1"><div class="success-icon" aria-hidden="true">✓</div><h3>Спасибо за заявку!</h3><p>Мы получили твои данные и благодарим за интерес к SlimSprint.</p><div class="success-note">Это предварительная заявка — оплачивать сейчас ничего не нужно. Мы сообщим тебе о запуске программы.</div><a href="#top">Вернуться на главную ↑</a></div>';
-   formCard.querySelector('.success-state').focus();
+   const success=formCard.querySelector('.success-state');
+   success.focus();
    formCard.scrollIntoView({behavior:'smooth',block:'center'});
-   ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k=>{const el=document.getElementById(k);if(el)el.value=params.get(k)||''});
-   document.getElementById('page_url').value=location.href;document.getElementById('referrer').value=document.referrer||'';
-  }catch(err){msg.textContent=err.message||'Не удалось отправить заявку. Попробуй ещё раз или повтори позже.';msg.style.color='#a33d35'}
-  finally{btn.disabled=false;btn.innerHTML='Отправить предварительную заявку <span aria-hidden="true">↗</span>'}
- });
+  }catch(err){
+   msg.textContent=err.message||'Не удалось отправить заявку. Попробуй ещё раз или повтори позже.';
+   msg.style.color='#a33d35';
+   msg.scrollIntoView({behavior:'smooth',block:'center'});
+  }finally{
+   if(form.contains(btn)){btn.disabled=false;btn.innerHTML='Отправить предварительную заявку <span aria-hidden="true">↗</span>'}
+  }
+ });;
 })();
 </script>
 </body></html>

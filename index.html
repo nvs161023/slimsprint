@@ -1,0 +1,232 @@
+
+<section class="lead-section" id="lead-form">
+  <div class="lead-container">
+    <h2>Начни с простого шага</h2>
+    <p>Оставь заявку на SlimSprint. Мы сообщим, когда программа будет готова.</p>
+
+    <form id="slimsprint-form"
+          action="https://formsubmit.co/ajax/nvs16@ya.ru"
+          method="POST">
+
+      <!-- Настройки FormSubmit -->
+      <input type="hidden" name="_subject"
+             value="Новая заявка SlimSprint">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Защита от спама -->
+      <input type="text" name="_honey"
+             style="display:none">
+
+      <!-- Данные рекламной кампании -->
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="utm_content" id="utm_content">
+      <input type="hidden" name="utm_term" id="utm_term">
+      <input type="hidden" name="page_url" id="page_url">
+      <input type="hidden" name="referrer" id="referrer">
+
+      <label for="lead-name">Как тебя зовут?</label>
+      <input id="lead-name" type="text" name="Имя"
+             placeholder="Твоё имя" maxlength="60" required>
+
+      <label for="lead-email">Твой e-mail</label>
+      <input id="lead-email" type="email" name="Email"
+             placeholder="name@example.com" required>
+
+      <label for="lead-phone">Телефон (необязательно)</label>
+      <input id="lead-phone" type="tel" name="Телефон"
+             placeholder="+7 (___) ___-__-__" maxlength="30">
+
+      <label for="lead-interest">Что для тебя сейчас важнее?</label>
+      <select id="lead-interest" name="Главный интерес" required>
+        <option value="">Выбери вариант</option>
+        <option value="Готовое меню на каждый день">Готовое меню</option>
+        <option value="Простые рецепты">Простые рецепты</option>
+        <option value="Контроль порций и калорийности">Контроль порций</option>
+        <option value="Удобное питание без сложных ограничений">Питание без сложных ограничений</option>
+      </select>
+
+      <label class="consent">
+        <input type="checkbox" name="Согласие на обработку данных"
+               value="Да" required>
+        <span>
+          Я согласен(на) на обработку персональных данных
+          в соответствии с
+          <a href="/privacy-policy" target="_blank">
+            политикой конфиденциальности
+          </a>.
+        </span>
+      </label>
+
+      <button type="submit" id="lead-submit">
+        Оставить заявку
+      </button>
+
+      <p id="form-message" role="status" aria-live="polite"></p>
+
+      <small>
+        Это предварительная заявка. Оплата сейчас не принимается.
+        Планируемая стоимость программы — 799 ₽.
+      </small>
+    </form>
+  </div>
+</section>
+
+<style>
+.lead-section {
+  padding: 64px 20px;
+  background: #f3f5ef;
+}
+.lead-container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 36px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(35,50,35,.06);
+}
+.lead-container h2 {
+  color: #27352d;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+.lead-container p {
+  color: #69756c;
+  line-height: 1.5;
+}
+#slimsprint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#slimsprint-form label {
+  color: #35443a;
+  font-size: 14px;
+  font-weight: 600;
+}
+#slimsprint-form input:not([type="checkbox"]),
+#slimsprint-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #dce3d9;
+  border-radius: 12px;
+  background: #fbfcfa;
+  color: #26352b;
+  font: inherit;
+}
+#slimsprint-form input:focus,
+#slimsprint-form select:focus {
+  outline: 2px solid #9eaf91;
+  border-color: #9eaf91;
+}
+#slimsprint-form .consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 8px 0;
+}
+#slimsprint-form .consent input {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+#slimsprint-form a {
+  color: #637d60;
+}
+#lead-submit {
+  border: 0;
+  border-radius: 14px;
+  padding: 17px;
+  background: #526d55;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+#lead-submit:hover {
+  background: #405a45;
+  transform: translateY(-1px);
+}
+#lead-submit:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+#slimsprint-form small {
+  color: #7c877e;
+  line-height: 1.5;
+}
+#form-message {
+  margin: 0;
+  font-size: 14px;
+}
+@media(max-width: 520px) {
+  .lead-container {
+    padding: 24px 18px;
+  }
+  .lead-container h2 {
+    font-size: 25px;
+  }
+}
+</style>
+
+<script>
+(function () {
+  const form = document.getElementById('slimsprint-form');
+  if (!form) return;
+
+  const params = new URLSearchParams(window.location.search);
+
+  ['utm_source', 'utm_medium', 'utm_campaign',
+   'utm_content', 'utm_term'].forEach(function (key) {
+    const field = document.getElementById(key);
+    if (field) field.value = params.get(key) || '';
+  });
+
+  document.getElementById('page_url').value = window.location.href;
+  document.getElementById('referrer').value = document.referrer || '';
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const button = document.getElementById('lead-submit');
+    const message = document.getElementById('form-message');
+
+    button.disabled = true;
+    button.textContent = 'Отправляем...';
+    message.textContent = '';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || result.success === false) {
+        throw new Error('Не удалось отправить заявку');
+      }
+
+      message.textContent =
+        'Спасибо! Заявка отправлена. Мы свяжемся с тобой.';
+      message.style.color = '#426b49';
+      form.reset();
+
+    } catch (error) {
+      message.textContent =
+        'Не получилось отправить заявку. Попробуй ещё раз позже.';
+      message.style.color = '#b44747';
+
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Оставить заявку';
+    }
+  });
+})();
+</script>

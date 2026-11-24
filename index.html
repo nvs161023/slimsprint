@@ -108,7 +108,8 @@
   msg.textContent='Проверяем отправку…';
   msg.style.color='#68736a';
   try{
-   const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+   const payload=Object.fromEntries(new FormData(form).entries());
+   const response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});
    let data;
    try{data=await response.json()}catch(parseError){throw new Error('Сервис вернул непонятный ответ. Заявка могла не отправиться — попробуй ещё раз.')}
    if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Не удалось отправить заявку. Проверь соединение и попробуй ещё раз.');

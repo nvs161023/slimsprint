@@ -98,37 +98,37 @@
  document.getElementById('year').textContent=new Date().getFullYear();
  const observer=('IntersectionObserver' in window)?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12}):null;
  document.querySelectorAll('.reveal').forEach(el=>{if(observer)observer.observe(el);else el.classList.add('visible')});
- form.addEventListener('submit',async e=>{
+ form.addEventListener('submit',e=>{
   e.preventDefault();
   const btn=document.getElementById('lead-submit');
   const msg=document.getElementById('form-message');
   const formCard=form.closest('.form-card');
+  if(btn.disabled)return;
   btn.disabled=true;
-  btn.textContent='Отправляем…';
-  msg.textContent='Проверяем отправку…';
-  msg.style.color='#68736a';
-  try{
-   const payload=Object.fromEntries(new FormData(form).entries());
-   const controller=new AbortController();
-   const timeout=setTimeout(()=>controller.abort(),12000);
-   let response;
-   try{
-    response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
-   }finally{clearTimeout(timeout)}
-   let data;
-   try{data=await response.json()}catch(parseError){throw new Error('Сервис получил запрос, но не вернул подтверждение. Не отправляй форму повторно сразу: проверь почту или напиши нам позже.')}
-   if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Сервис не подтвердил приём заявки. Попробуй позже.');
-   formCard.innerHTML='<div class="success-state" role="status" aria-live="polite" tabindex="-1"><div class="success-icon" aria-hidden="true">✓</div><h3>Спасибо за заявку!</h3><p>Мы получили твои данные и благодарим за интерес к SlimSprint.</p><div class="success-note">Это предварительная заявка — оплачивать сейчас ничего не нужно. Мы сообщим тебе о запуске программы.</div><a href="#top">Вернуться на главную ↑</a></div>';
-   const success=formCard.querySelector('.success-state');
-   success.focus();
-   formCard.scrollIntoView({behavior:'smooth',block:'center'});
-  }catch(err){
-   msg.textContent=err.name==='AbortError'?'Сервис FormSubmit не ответил за 12 секунд. Заявка могла дойти — пожалуйста, не отправляй её повторно сразу.':(err.message||'Не удалось отправить заявку. Попробуй позже.');
-   msg.style.color='#a33d35';
-   msg.scrollIntoView({behavior:'smooth',block:'center'});
-  }finally{
-   if(form.contains(btn)){btn.disabled=false;btn.innerHTML='Отправить предварительную заявку <span aria-hidden="true">↗</span>'}
-  }
+  const payload=Object.fromEntries(new FormData(form).entries());
+
+  // Show immediate feedback; network confirmation updates this screen later.
+  formCard.innerHTML='<div class="success-state" role="status" aria-live="polite" tabindex="-1"><div class="success-icon" aria-hidden="true">✓</div><h3>Спасибо за заявку!</h3><p>Отправляем твои контакты. Это займёт немного времени.</p><div class="success-note" id="submission-status">Пожалуйста, не закрывай страницу несколько секунд.</div><a href="#top">Вернуться на главную ↑</a></div>';
+  const success=formCard.querySelector('.success-state');
+  const status=formCard.querySelector('#submission-status');
+  success.focus();
+  formCard.scrollIntoView({behavior:'smooth',block:'center'});
+
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),12000);
+  fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:controller.signal})
+   .then(async response=>{
+    let data;
+    try{data=await response.json()}catch(error){throw new Error('Сервис не вернул подтверждение отправки.')}
+    if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Сервис не подтвердил приём заявки.');
+    status.textContent='Заявка успешно отправлена. Мы получили твои данные и сообщим о запуске SlimSprint. Оплачивать сейчас ничего не нужно.';
+   })
+   .catch(error=>{
+    status.textContent=error.name==='AbortError'
+     ?'Почтовый сервис отвечает дольше обычного. Заявка могла дойти — проверь почту позже. Пожалуйста, не отправляй её повторно сразу.'
+     :'Не удалось получить подтверждение от почтового сервиса. Заявка могла дойти — пожалуйста, проверь почту или свяжись с нами перед повторной отправкой.';
+   })
+   .finally(()=>clearTimeout(timeout));
  });;
 })();
 </script>

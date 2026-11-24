@@ -102,11 +102,11 @@
   e.preventDefault();const btn=document.getElementById('lead-submit'),msg=document.getElementById('form-message');
   btn.disabled=true;btn.textContent='Отправляем…';msg.textContent='';
   try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-   const data=await response.json();if(!response.ok||data.success===false)throw new Error('Submission failed');
+   const data=await response.json();if(!response.ok||String(data.success)!=='true')throw new Error(data.message||'Не удалось принять заявку. Проверь подтверждение адреса FormSubmit и попробуй ещё раз.');
    msg.textContent='Спасибо! Заявка отправлена. Мы свяжемся с тобой после подготовки программы.';msg.style.color='#405a45';form.reset();
    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k=>{const el=document.getElementById(k);if(el)el.value=params.get(k)||''});
    document.getElementById('page_url').value=location.href;document.getElementById('referrer').value=document.referrer||'';
-  }catch(err){msg.textContent='Не удалось отправить заявку. Попробуй ещё раз или повтори позже.';msg.style.color='#a33d35'}
+  }catch(err){msg.textContent=err.message||'Не удалось отправить заявку. Попробуй ещё раз или повтори позже.';msg.style.color='#a33d35'}
   finally{btn.disabled=false;btn.innerHTML='Отправить предварительную заявку <span aria-hidden="true">↗</span>'}
  });
 })();

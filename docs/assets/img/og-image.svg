@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="SlimSprint — питание, которое вписывается в твою жизнь">
+<title>SlimSprint — питание, которое вписывается в твою жизнь</title>
+<defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f7f1"/><stop offset="1" stop-color="#eef1e6"/>
+    </linearGradient>
+    <linearGradient id="ogArch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe7d1"/><stop offset="1" stop-color="#cfdabb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <clipPath id="ogArchClip"><path d="M690 570 V265 A205 205 0 0 1 895 60 H935 A205 205 0 0 1 1140 265 V570 Z"/></clipPath>
+  <g clip-path="url(#ogArchClip)">
+    <rect x="690" y="60" width="450" height="510" fill="url(#ogArch)"/>
+    <circle cx="915" cy="330" r="168" fill="#fbf9f2"/>
+    <circle cx="915" cy="330" r="146" fill="#ffffff"/>
+    <g fill="#c4ab74" opacity=".85"><ellipse cx="916.9" cy="375.5" rx="5.2" ry="3.3" transform="rotate(88 916.9 375.5)"/><ellipse cx="974.2" cy="374.5" rx="5.2" ry="3.3" transform="rotate(43 974.2 374.5)"/><ellipse cx="960.6" cy="349.8" rx="5.2" ry="3.3" transform="rotate(28 960.6 349.8)"/><ellipse cx="860.8" cy="384.9" rx="5.2" ry="3.3" transform="rotate(128 860.8 384.9)"/><ellipse cx="983.8" cy="304.6" rx="5.2" ry="3.3" transform="rotate(334 983.8 304.6)"/><ellipse cx="978.4" cy="317.7" rx="5.2" ry="3.3" transform="rotate(345 978.4 317.7)"/><ellipse cx="992.3" cy="287.7" rx="5.2" ry="3.3" transform="rotate(324 992.3 287.7)"/><ellipse cx="895.1" cy="390.0" rx="5.2" ry="3.3" transform="rotate(105 895.1 390.0)"/><ellipse cx="956.9" cy="393.0" rx="5.2" ry="3.3" transform="rotate(61 956.9 393.0)"/><ellipse cx="919.2" cy="349.4" rx="5.2" ry="3.3" transform="rotate(80 919.2 349.4)"/><ellipse cx="887.5" cy="325.5" rx="5.2" ry="3.3" transform="rotate(190 887.5 325.5)"/><ellipse cx="997.1" cy="345.8" rx="5.2" ry="3.3" transform="rotate(13 997.1 345.8)"/><ellipse cx="871.5" cy="287.0" rx="5.2" ry="3.3" transform="rotate(229 871.5 287.0)"/><ellipse cx="967.7" cy="325.6" rx="5.2" ry="3.3" transform="rotate(352 967.7 325.6)"/><ellipse cx="972.5" cy="293.2" rx="5.2" ry="3.3" transform="rotate(320 972.5 293.2)"/><ellipse cx="840.1" cy="332.3" rx="5.2" ry="3.3" transform="rotate(177 840.1 332.3)"/><ellipse cx="990.5" cy="323.2" rx="5.2" ry="3.3" transform="rotate(352 990.5 323.2)"/><ellipse cx="981.5" cy="357.3" rx="5.2" ry="3.3" transform="rotate(27 981.5 357.3)"/><ellipse cx="975.0" cy="373.6" rx="5.2" ry="3.3" transform="rotate(42 975.0 373.6)"/><ellipse cx="953.0" cy="293.0" rx="5.2" ry="3.3" transform="rotate(308 953.0 293.0)"/><ellipse cx="948.9" cy="313.2" rx="5.2" ry="3.3" transform="rotate(327 948.9 313.2)"/><ellipse cx="932.8" cy="307.2" rx="5.2" ry="3.3" transform="rotate(301 932.8 307.2)"/><ellipse cx="1002.3" cy="307.8" rx="5.2" ry="3.3" transform="rotate(341 1002.3 307.8)"/><ellipse cx="911.0" cy="268.7" rx="5.2" ry="3.3" transform="rotate(266 911.0 268.7)"/><ellipse cx="957.3" cy="329.8" rx="5.2" ry="3.3" transform="rotate(358 957.3 329.8)"/><ellipse cx="855.6" cy="299.7" rx="5.2" ry="3.3" transform="rotate(211 855.6 299.7)"/><ellipse cx="955.0" cy="304.6" rx="5.2" ry="3.3" transform="rotate(320 955.0 304.6)"/><ellipse cx="958.8" cy="312.4" rx="5.2" ry="3.3" transform="rotate(332 958.8 312.4)"/><ellipse cx="973.1" cy="367.3" rx="5.2" ry="3.3" transform="rotate(38 973.1 367.3)"/><ellipse cx="896.2" cy="277.8" rx="5.2" ry="3.3" transform="rotate(252 896.2 277.8)"/></g><g fill="#ecdcb6"><ellipse cx="917.7" cy="374.7" rx="3.4" ry="2" transform="rotate(88 916.9 375.5)"/><ellipse cx="975.0" cy="373.7" rx="3.4" ry="2" transform="rotate(43 974.2 374.5)"/><ellipse cx="961.4" cy="349.0" rx="3.4" ry="2" transform="rotate(28 960.6 349.8)"/><ellipse cx="861.6" cy="384.1" rx="3.4" ry="2" transform="rotate(128 860.8 384.9)"/><ellipse cx="984.6" cy="303.8" rx="3.4" ry="2" transform="rotate(334 983.8 304.6)"/><ellipse cx="979.2" cy="316.9" rx="3.4" ry="2" transform="rotate(345 978.4 317.7)"/><ellipse cx="993.1" cy="286.9" rx="3.4" ry="2" transform="rotate(324 992.3 287.7)"/><ellipse cx="895.9" cy="389.2" rx="3.4" ry="2" transform="rotate(105 895.1 390.0)"/><ellipse cx="957.7" cy="392.2" rx="3.4" ry="2" transform="rotate(61 956.9 393.0)"/><ellipse cx="920.0" cy="348.6" rx="3.4" ry="2" transform="rotate(80 919.2 349.4)"/><ellipse cx="888.3" cy="324.7" rx="3.4" ry="2" transform="rotate(190 887.5 325.5)"/><ellipse cx="997.9" cy="345.0" rx="3.4" ry="2" transform="rotate(13 997.1 345.8)"/><ellipse cx="872.3" cy="286.2" rx="3.4" ry="2" transform="rotate(229 871.5 287.0)"/><ellipse cx="968.5" cy="324.8" rx="3.4" ry="2" transform="rotate(352 967.7 325.6)"/><ellipse cx="973.3" cy="292.4" rx="3.4" ry="2" transform="rotate(320 972.5 293.2)"/><ellipse cx="840.9" cy="331.5" rx="3.4" ry="2" transform="rotate(177 840.1 332.3)"/><ellipse cx="991.3" cy="322.4" rx="3.4" ry="2" transform="rotate(352 990.5 323.2)"/><ellipse cx="982.3" cy="356.5" rx="3.4" ry="2" transform="rotate(27 981.5 357.3)"/><ellipse cx="975.8" cy="372.8" rx="3.4" ry="2" transform="rotate(42 975.0 373.6)"/><ellipse cx="953.8" cy="292.2" rx="3.4" ry="2" transform="rotate(308 953.0 293.0)"/><ellipse cx="949.7" cy="312.4" rx="3.4" ry="2" transform="rotate(327 948.9 313.2)"/><ellipse cx="933.6" cy="306.4" rx="3.4" ry="2" transform="rotate(301 932.8 307.2)"/><ellipse cx="1003.1" cy="307.0" rx="3.4" ry="2" transform="rotate(341 1002.3 307.8)"/><ellipse cx="911.8" cy="267.9" rx="3.4" ry="2" transform="rotate(266 911.0 268.7)"/><ellipse cx="958.1" cy="329.0" rx="3.4" ry="2" transform="rotate(358 957.3 329.8)"/><ellipse cx="856.4" cy="298.9" rx="3.4" ry="2" transform="rotate(211 855.6 299.7)"/><ellipse cx="955.8" cy="303.8" rx="3.4" ry="2" transform="rotate(320 955.0 304.6)"/><ellipse cx="959.6" cy="311.6" rx="3.4" ry="2" transform="rotate(332 958.8 312.4)"/><ellipse cx="973.9" cy="366.5" rx="3.4" ry="2" transform="rotate(38 973.1 367.3)"/><ellipse cx="897.0" cy="277.0" rx="3.4" ry="2" transform="rotate(252 896.2 277.8)"/></g>
+    <g transform="translate(880 270) rotate(-16) scale(0.95)">
+    <ellipse cx="-6" cy="4" rx="34" ry="15" transform="rotate(-24)" fill="#7e9a72"/>
+    <ellipse cx="26" cy="-8" rx="30" ry="13" transform="rotate(18)" fill="#94ab86"/>
+    <ellipse cx="6" cy="-26" rx="26" ry="12" transform="rotate(-64)" fill="#7e9a72"/>
+    <path d="M-34 10 q30 10 60 -6" stroke="#6d8763" stroke-width="2.4" fill="none" opacity=".55"/>
+    <path d="M-4 -6 q22 -14 44 -6" stroke="#6d8763" stroke-width="2" fill="none" opacity=".45"/>
+  </g>
+    <circle cx="840" cy="384" r="26" fill="#d4685a"/>
+  <path d="M821.8 387.9 A21.32 21.32 0 0 0 850.92 402.72" stroke="#b8503f" stroke-width="4.16" fill="none" opacity=".45"/>
+  <ellipse cx="831.68" cy="375.16" rx="6.76" ry="4.68" transform="rotate(-28 831.68 375.16)" fill="#f6b3a6" opacity=".85"/>
+  <path d="M840 358.52 l3.6400000000000006 6.24 l6.76 -2.08 l-2.6 6.76 l5.72 4.68 l-7.280000000000001 0.78 l0.52 6.24 l-5.72 -4.16 l-5.2 5.2 l-0.52 -6.76 l-6.76 -1.56 l5.2 -4.68 l-3.6400000000000006 -5.72 l6.76 1.3 Z" fill="#647b65"/>
+  <path d="M834.8 356.7 q5.2 -5.72 10.92 -3.12" stroke="#405a45" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <circle cx="940" cy="396" r="20" fill="#d4685a"/>
+  <path d="M926 399 A16.4 16.4 0 0 0 948.4 410.4" stroke="#b8503f" stroke-width="3.2" fill="none" opacity=".45"/>
+  <ellipse cx="933.6" cy="389.2" rx="5.2" ry="3.5999999999999996" transform="rotate(-28 933.6 389.2)" fill="#f6b3a6" opacity=".85"/>
+  <path d="M940 376.4 l2.8000000000000003 4.8 l5.2 -1.6 l-2 5.2 l4.4 3.5999999999999996 l-5.6000000000000005 0.6 l0.4 4.8 l-4.4 -3.2 l-4 4 l-0.4 -5.2 l-5.2 -1.2 l4 -3.5999999999999996 l-2.8000000000000003 -4.4 l5.2 1 Z" fill="#647b65"/>
+  <path d="M936 375 q4 -4.4 8.4 -2.4" stroke="#405a45" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <g><circle cx="959.0" cy="297.2" r="6.7" fill="#eee9dd"/>
+    <circle cx="959.0" cy="297.2" r="3.3" fill="#e3dccb"/><circle cx="959.5" cy="303.8" r="6.0" fill="#eee9dd"/>
+    <circle cx="959.5" cy="303.8" r="3.3" fill="#e3dccb"/><circle cx="957.2" cy="287.2" r="5.6" fill="#eee9dd"/>
+    <circle cx="957.2" cy="287.2" r="3.3" fill="#e3dccb"/><circle cx="955.2" cy="313.8" r="6.5" fill="#eee9dd"/>
+    <circle cx="955.2" cy="313.8" r="3.3" fill="#e3dccb"/><circle cx="981.7" cy="310.2" r="5.2" fill="#eee9dd"/>
+    <circle cx="981.7" cy="310.2" r="3.3" fill="#e3dccb"/><circle cx="968.8" cy="298.0" r="4.8" fill="#eee9dd"/>
+    <circle cx="968.8" cy="298.0" r="3.3" fill="#e3dccb"/></g>
+    <g transform="translate(1000 240) rotate(20) scale(0.7)">
+    <path d="M0 0 C12 8 18 22 15 36 C12 54 2 70 -9 80 C-17 87 -25 84 -21 74 C-16 58 -9 42 1 28 C-5 20 -7 8 0 0 Z" fill="#e0965a"/>
+    <path d="M-1 6 C-9 24 -13 46 -14 70" stroke="#cc7a3f" stroke-width="2.6" fill="none" opacity=".55"/>
+    <path d="M3 10 C-1 28 -4 48 -5 68" stroke="#cc7a3f" stroke-width="2" fill="none" opacity=".4"/>
+    <path d="M-2 5 C-12 -6 -17 -17 -14 -27 C-4 -21 3 -9 4 0 Z" fill="#647b65"/>
+    <path d="M3 3 C6 -10 14 -20 26 -25 C23 -13 15 -2 7 6 Z" fill="#94ab86"/>
+    <path d="M0 2 C-2 -12 2 -24 12 -32 C13 -19 9 -6 4 3 Z" fill="#b3c4a2"/>
+  </g>
+  </g>
+  <rect x="80" y="118" width="58" height="3" rx="1.5" fill="#647b65"/>
+  <text x="156" y="126" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3.6" fill="#647b65">НОВЫЙ ПОДХОД К ПИТАНИЮ</text>
+  <text x="78" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2" fill="#202a22">Питание, которое</text>
+  <text x="78" y="332" font-family="Georgia, Times New Roman, serif" font-style="italic" font-size="76" letter-spacing="-1" fill="#647b65">вписывается</text>
+  <text x="78" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2" fill="#202a22">в твою жизнь.</text>
+  <text x="80" y="486" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#5c6a61">Персональный план на 30 дней: меню, рецепты и гибкий режим.</text>
+  <rect x="80" y="524" width="252" height="58" rx="29" fill="#405a45"/>
+  <text x="206" y="561" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#ffffff">Ранний доступ</text>
+  <text x="1120" y="600" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#6b766d">slimsprint.ru</text>
+</svg>

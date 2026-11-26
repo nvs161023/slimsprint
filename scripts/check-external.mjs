@@ -10,7 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "docs");
-const allowed = new Set(["slimsprint.ru", "www.w3.org"]);
+const allowed = new Set(["slimsprint.ru", "www.w3.org", "forms.yandex.ru"]);
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {

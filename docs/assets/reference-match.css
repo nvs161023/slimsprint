@@ -324,3 +324,40 @@ body{background:#f8f3e9!important;color:#17231b!important;font-family:'Manrope',
  .shopping-card-image{width:48%!important;height:70%!important;right:-10px!important;bottom:-7px!important}
  .shopping-card:after{background:linear-gradient(90deg,#e9ecd9 0%,#e9ecd9ee 55%,transparent 100%)!important}
 }
+
+/* Fail-safe: content must never disappear when reveal JavaScript fails.
+   The page is a pre-launch landing; readable content takes priority over animation. */
+.reveal,
+html.js .reveal:not(.visible),
+html.js .reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+html.js .reveal {
+  transition: none !important;
+}
+
+/* Keep the complete menu and shopping panel in the mobile flow. */
+@media (max-width: 850px) {
+  .reference-menu-zone {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 30px 0 !important;
+    overflow: visible !important;
+  }
+  .reference-menu-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    align-items: start !important;
+  }
+  .menu-intro,
+  .weekly-menu-panel,
+  .shopping-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    grid-column: 1 !important;
+  }
+  .weekly-menu-panel {
+    grid-row: auto !important;
+  }
+}

@@ -210,6 +210,12 @@
 })();
 
   // Interactive seven-day sample menu: tabs update the four meal cards in place.
+  var menuPhotos = [
+    "https://images.unsplash.com/photo-1648061930045-e9fdd171c052?auto=format&fit=crop&w=650&q=82",
+    "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=650&q=82",
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=82",
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=650&q=82"
+  ];
   var menuDays = [
     [{n:"Овсяная каша",d:"с ягодами",k:"320 ккал",a:"Овсяная каша с ягодами"},{n:"Куриная грудка",d:"с киноа и овощами",k:"420 ккал",a:"Куриная грудка с киноа и овощами"},{n:"Греческий йогурт",d:"с ягодами",k:"150 ккал",a:"Греческий йогурт с ягодами"},{n:"Лосось с овощами",d:"на пару",k:"380 ккал",a:"Лосось с овощами"}],
     [{n:"Творожная миска",d:"с бананом",k:"300 ккал",a:"Творог с бананом"},{n:"Салат с индейкой",d:"и авокадо",k:"410 ккал",a:"Салат с индейкой и авокадо"},{n:"Яблоко и йогурт",d:"с корицей",k:"170 ккал",a:"Яблоко и йогурт"},{n:"Запечённая рыба",d:"с брокколи",k:"365 ккал",a:"Рыба с брокколи"}],
@@ -236,7 +242,7 @@
         card.querySelector("[data-name]").textContent = item.n;
         card.querySelector("[data-desc]").textContent = item.d;
         card.querySelector("[data-kcal]").textContent = item.k;
-        card.querySelector(".week-meal-image img").alt = item.a;
+        var mealImage = card.querySelector(".week-meal-image img");\n        mealImage.alt = item.a;\n        mealImage.src = menuPhotos[(day + index) % menuPhotos.length];
       });
       var caption = document.querySelector(".week-subtitle");
       if (caption) caption.textContent = "Меню на день " + (day + 1);

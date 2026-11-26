@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 686" width="900" height="686" role="img" aria-label="Пример списка покупок по категориям">
+<title>Пример списка покупок по категориям</title>
+<rect x="0" y="0" width="900" height="686" rx="0" fill="#f3f2ec"/>
+<rect x="34" y="26" width="832" height="92" rx="22" fill="#fffefa"/>
+<rect x="60" y="44" width="44" height="44" rx="14" fill="#dce7c9"/>
+<path d="M72 56 h20 l-2 20 h-16 Z" fill="none" stroke="#405a45" stroke-width="2" stroke-linejoin="round"/><path d="M76 76 v4 a6 6 0 0 0 6 6 h4 a6 6 0 0 0 6 -6 v-4" fill="none" stroke="#405a45" stroke-width="2" stroke-linecap="round"/><path d="M77 56 l1.5 -6 h13 l1.5 6" fill="none" stroke="#405a45" stroke-width="2" stroke-linejoin="round"/>
+<text x="120" y="60" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#202a22" text-anchor="start" opacity="1">Список покупок</text>
+<text x="120" y="82" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="start" opacity="1">Неделя 1 · по категориям</text>
+<rect x="718" y="58" width="122" height="36" rx="18" fill="#eef2e4"/>
+<text x="779" y="80" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#405a45" text-anchor="middle" opacity="1">14 из 20</text>
+<rect x="34" y="150" width="402" height="230" rx="20" fill="#fffefa"/>
+<text x="56" y="178" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Овощи и фрукты</text>
+<rect x="56" y="204" width="18" height="18" rx="6" fill="#8aa07e"/>
+       <path d="M61 213.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="218" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#8b948b" text-anchor="start" opacity="0.85">Помидоры</text>
+<text x="414" y="218" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">1 кг</text>
+<line x1="56" y1="238" x2="414" y2="238" stroke="#e5e7de"/>
+<rect x="56" y="248" width="18" height="18" rx="6" fill="#8aa07e"/>
+       <path d="M61 257.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="262" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#8b948b" text-anchor="start" opacity="0.85">Огурцы</text>
+<text x="414" y="262" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">500 г</text>
+<line x1="56" y1="282" x2="414" y2="282" stroke="#e5e7de"/>
+<rect x="56" y="292" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M61 301.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="306" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Морковь</text>
+<text x="414" y="306" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">700 г</text>
+<line x1="56" y1="326" x2="414" y2="326" stroke="#e5e7de"/>
+<rect x="56" y="336" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M61 345.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="350" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Яблоки</text>
+<text x="414" y="350" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">1 кг</text>
+<rect x="464" y="150" width="402" height="186" rx="20" fill="#fffefa"/>
+<text x="486" y="178" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Белок</text>
+<rect x="486" y="204" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M491 213.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="516" y="218" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Яйца</text>
+<text x="844" y="218" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">10 шт</text>
+<line x1="486" y1="238" x2="844" y2="238" stroke="#e5e7de"/>
+<rect x="486" y="248" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M491 257.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="516" y="262" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Куриная грудка</text>
+<text x="844" y="262" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">900 г</text>
+<line x1="486" y1="282" x2="844" y2="282" stroke="#e5e7de"/>
+<rect x="486" y="292" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M491 301.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="516" y="306" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Творог 5%</text>
+<text x="844" y="306" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">400 г</text>
+<rect x="34" y="404" width="402" height="186" rx="20" fill="#fffefa"/>
+<text x="56" y="432" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Крупы и бакалея</text>
+<rect x="56" y="458" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M61 467.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="472" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Киноа</text>
+<text x="414" y="472" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">400 г</text>
+<line x1="56" y1="492" x2="414" y2="492" stroke="#e5e7de"/>
+<rect x="56" y="502" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M61 511.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="516" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Гречка</text>
+<text x="414" y="516" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">700 г</text>
+<line x1="56" y1="536" x2="414" y2="536" stroke="#e5e7de"/>
+<rect x="56" y="546" width="18" height="18" rx="6" fill="#ffffff" stroke="#e3dccb"/>
+       <path d="M61 555.5 l3 3 l5 -6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="560" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Оливковое масло</text>
+<text x="414" y="560" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="end" opacity="1">1 шт</text>
+<rect x="34" y="598" width="832" height="2" rx="1" fill="#e5e7de"/>
+<text x="34" y="628" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#68736a" text-anchor="start" opacity="1">Порции рассчитаны под ваш режим питания и пересчитываются при замене блюда.</text>
+<text x="34" y="650" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#8b948b" text-anchor="start" opacity="1">Иллюстрация показывает принцип списка, а не готовые данные.</text>
+</svg>

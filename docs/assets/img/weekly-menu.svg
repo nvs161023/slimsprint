@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Пример меню на неделю с четырьмя приёмами пищи и свободным приёмом">
+<title>Пример меню на неделю с четырьмя приёмами пищи и свободным приёмом</title>
+<rect x="0" y="0" width="1200" height="700" rx="0" fill="#f3f2ec"/>
+<rect x="34" y="24" width="1132" height="76" rx="20" fill="#fffefa"/>
+<text x="58" y="52" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#202a22" text-anchor="start" opacity="1">Меню на неделю</text>
+<text x="58" y="74" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#68736a" text-anchor="start" opacity="1">Режим: 3 приёма + 1 перекус</text>
+<rect x="916" y="44" width="34" height="34" rx="12" fill="#ffffff" stroke="#e5e7de" stroke-width="1"/>
+<text x="933" y="66" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="18" font-weight="400" fill="#647b65" text-anchor="middle" opacity="1">‹</text>
+<rect x="956" y="44" width="130" height="34" rx="12" fill="#eef2e4"/>
+<text x="1021" y="66" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#405a45" text-anchor="middle" opacity="1">Неделя 1</text>
+<rect x="1092" y="44" width="34" height="34" rx="12" fill="#ffffff" stroke="#e5e7de" stroke-width="1"/>
+<text x="1109" y="66" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="18" font-weight="400" fill="#647b65" text-anchor="middle" opacity="1">›</text>
+<text x="205.85714285714286" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Пн</text>
+<rect x="285.7142857142857" y="114" width="135.71428571428572" height="40" rx="12" fill="#dce7c9"/>
+<text x="353.57142857142856" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#405a45" text-anchor="middle" opacity="1">Вт</text>
+<text x="501.28571428571433" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Ср</text>
+<text x="649" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Чт</text>
+<text x="796.7142857142858" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Пт</text>
+<text x="944.4285714285716" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Сб</text>
+<text x="1092.142857142857" y="139" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#44504a" text-anchor="middle" opacity="1">Вс</text>
+<text x="38" y="188" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Завтрак</text>
+<text x="38" y="306" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Обед</text>
+<text x="38" y="424" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Перекус</text>
+<text x="38" y="542" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#647b65" text-anchor="start" opacity="1">Ужин</text>
+<rect x="138" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="152" y="213" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Овсянка с</text>
+<text x="152" y="231" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">ягодами</text>
+<rect x="138" y="284" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="152" y="341" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Боул с киноа</text>
+<rect x="138" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="152" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Йогурт и яблоко</text>
+<rect x="138" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="152" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Омлет с овощами</text>
+<rect x="285.7142857142857" y="166" width="135.71428571428572" height="106" rx="14" fill="#fbfcf7" stroke="#e5e7de" stroke-width="1"/>
+<text x="299.7142857142857" y="223" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Яйца и тосты</text>
+<rect x="285.7142857142857" y="284" width="135.71428571428572" height="106" rx="14" fill="#fbfcf7" stroke="#e5e7de" stroke-width="1"/>
+<text x="299.7142857142857" y="341" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Курица с гречкой</text>
+<rect x="285.7142857142857" y="402" width="135.71428571428572" height="106" rx="14" fill="#fbfcf7" stroke="#e5e7de" stroke-width="1"/>
+<text x="299.7142857142857" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Творог с грушей</text>
+<rect x="285.7142857142857" y="520" width="135.71428571428572" height="106" rx="14" fill="#fbfcf7" stroke="#e5e7de" stroke-width="1"/>
+<text x="299.7142857142857" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Рыба с овощами</text>
+<rect x="433.42857142857144" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="447.42857142857144" y="223" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Сырники</text>
+<rect x="433.42857142857144" y="284" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="447.42857142857144" y="331" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Суп-пюре с</text>
+<text x="447.42857142857144" y="349" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">курицей</text>
+<rect x="433.42857142857144" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="447.42857142857144" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Орехи и апельсин</text>
+<rect x="433.42857142857144" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="447.42857142857144" y="567" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Запечённая</text>
+<text x="447.42857142857144" y="585" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">грудка</text>
+<rect x="581.1428571428571" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="595.1428571428571" y="223" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Гранола с йогурт</text>
+<rect x="581.1428571428571" y="284" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="595.1428571428571" y="341" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Боул с овощами</text>
+<rect x="581.1428571428571" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="595.1428571428571" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Хумус и морковь</text>
+<rect x="581.1428571428571" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="595.1428571428571" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Паста с тунцом</text>
+<rect x="728.8571428571429" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="742.8571428571429" y="223" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Омлет с шпинатом</text>
+<rect x="728.8571428571429" y="284" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="742.8571428571429" y="341" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Рис с рыбой</text>
+<rect x="728.8571428571429" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="742.8571428571429" y="449" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Смузи и</text>
+<text x="742.8571428571429" y="467" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">проростки</text>
+<rect x="728.8571428571429" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="742.8571428571429" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Салат с фетой</text>
+<rect x="876.5714285714287" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="890.5714285714287" y="223" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Блины с творогом</text>
+<rect x="876.5714285714287" y="284" width="135.71428571428572" height="106" rx="14" fill="#405a45"/>
+<text x="944.4285714285716" y="323" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#e9efdf" text-anchor="middle" opacity="1">Свободный</text>
+<text x="944.4285714285716" y="341" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d8bd" text-anchor="middle" opacity="1">приём пищи</text>
+<rect x="876.5714285714287" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="890.5714285714287" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Фрукты и орехи</text>
+<rect x="876.5714285714287" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="890.5714285714287" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Лёгкий суп-пюре</text>
+<rect x="1024.2857142857142" y="166" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="1038.2857142857142" y="213" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Овсянка с</text>
+<text x="1038.2857142857142" y="231" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">бананом</text>
+<rect x="1024.2857142857142" y="284" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="1038.2857142857142" y="331" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Индейка с</text>
+<text x="1038.2857142857142" y="349" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">овощами</text>
+<rect x="1024.2857142857142" y="402" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="1038.2857142857142" y="459" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Кефир и хлебец</text>
+<rect x="1024.2857142857142" y="520" width="135.71428571428572" height="106" rx="14" fill="#fffefa" stroke="#e5e7de" stroke-width="1"/>
+<text x="1038.2857142857142" y="577" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#202a22" text-anchor="start" opacity="1">Овощи на гриле</text>
+<text x="34" y="680" font-family="'DM Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#8b948b" text-anchor="start" opacity="1">Иллюстрация показывает формат меню. Блюда, порции и перекусы подбираются индивидуально.</text>
+</svg>

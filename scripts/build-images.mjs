@@ -141,7 +141,7 @@ function chickpeas(cx, cy, n, seed, r = 7) {
 }
 
 const archClip = (id, x, y, w, h, r) =>
-  `<clipPath id="${id}"><path d="M${x} ${y + h} V${y + r} A${r} ${r} 0 0 1 ${x + r} ${y} H${x + w - r} A${r} ${r} 0 0 1 ${x + w} ${y + r} V${y + h} Z"/></clipPath>`;
+  `<clipPath id="c-${id}"><path d="M${x} ${y + h} V${y + r} A${r} ${r} 0 0 1 ${x + r} ${y} H${x + w - r} A${r} ${r} 0 0 1 ${x + w} ${y + r} V${y + h} Z"/></clipPath>`;
 
 const shadow = (cx, cy, rx, ry, o = 0.16) =>
   `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="#2f3b2f" opacity="${o}"/>`;
@@ -152,22 +152,22 @@ function plateHero() {
   const cx = 400;
   const cy = 400;
   let b = `<defs>
-    <radialGradient id="table" cx="50%" cy="40%" r="75%">
+    <radialGradient id="g-table" cx="50%" cy="40%" r="75%">
       <stop offset="0" stop-color="#6a5443"/><stop offset="1" stop-color="#46382d"/>
     </radialGradient>
-    <radialGradient id="plateGloss" cx="38%" cy="30%" r="70%">
+    <radialGradient id="g-plateGloss" cx="38%" cy="30%" r="70%">
       <stop offset="0" stop-color="#ffffff"/><stop offset=".75" stop-color="#fbf9f2"/><stop offset="1" stop-color="#ece7da"/>
     </radialGradient>
-    <radialGradient id="innerGloss" cx="42%" cy="34%" r="70%">
+    <radialGradient id="g-innerGloss" cx="42%" cy="34%" r="70%">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f4f1e6"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="800" fill="url(#table)"/>
+  <rect width="800" height="800" fill="url(#g-table)"/>
   ${[...Array(7)].map((_, i) => `<rect x="${i * 118}" width="2" height="800" fill="${P.tableD}" opacity=".55"/>`).join("")}
   <ellipse cx="400" cy="430" rx="330" ry="330" fill="#2f3b2f" opacity=".22"/>
-  <circle cx="${cx}" cy="${cy}" r="300" fill="url(#plateGloss)"/>
+  <circle cx="${cx}" cy="${cy}" r="300" fill="url(#g-plateGloss)"/>
   <circle cx="${cx}" cy="${cy}" r="292" fill="none" stroke="#ded7c6" stroke-width="2"/>
-  <circle cx="${cx}" cy="${cy}" r="258" fill="url(#innerGloss)"/>
+  <circle cx="${cx}" cy="${cy}" r="258" fill="url(#g-innerGloss)"/>
   <circle cx="${cx}" cy="${cy}" r="258" fill="none" stroke="#e8e2d3" stroke-width="3"/>`;
 
   // quinoa base with herby edge
@@ -200,17 +200,17 @@ function plateBowl() {
   const cx = 350;
   const cy = 225;
   let b = `<defs>
-    <radialGradient id="bowlBg" cx="50%" cy="30%" r="80%">
+    <radialGradient id="g-bowlBg" cx="50%" cy="30%" r="80%">
       <stop offset="0" stop-color="#f2f4ea"/><stop offset="1" stop-color="#e2e6d6"/>
     </radialGradient>
-    <radialGradient id="bowl" cx="40%" cy="30%" r="72%">
+    <radialGradient id="g-bowl" cx="40%" cy="30%" r="72%">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f0e5"/>
     </radialGradient>
   </defs>
-  <rect width="700" height="466" fill="url(#bowlBg)"/>
+  <rect width="700" height="466" fill="url(#g-bowlBg)"/>
   <rect y="350" width="700" height="116" fill="#dfe4d3"/>
   ${shadow(350, 384, 186, 26)}
-  <circle cx="${cx}" cy="${cy}" r="172" fill="url(#bowl)"/>
+  <circle cx="${cx}" cy="${cy}" r="172" fill="url(#g-bowl)"/>
   <circle cx="${cx}" cy="${cy}" r="172" fill="none" stroke="#e6e0d0" stroke-width="2"/>
   <circle cx="${cx}" cy="${cy}" r="150" fill="#f8f6ee"/>`;
 
@@ -228,18 +228,18 @@ function plateBowl() {
 
 function platePrep() {
   let b = `<defs>
-    <linearGradient id="prepBg" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="g-prepBg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f6f3ea"/><stop offset="1" stop-color="#ece8da"/>
     </linearGradient>
-    <linearGradient id="boardIn" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="g-boardIn" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${P.boardIn}"/><stop offset="1" stop-color="#e3cda3"/>
     </linearGradient>
   </defs>
-  <rect width="700" height="466" fill="url(#prepBg)"/>
+  <rect width="700" height="466" fill="url(#g-prepBg)"/>
   <rect y="330" width="700" height="136" fill="#e6e1d2"/>
   ${shadow(350, 372, 250, 18, 0.12)}
   <rect x="76" y="104" width="548" height="256" rx="30" fill="${P.board}"/>
-  <rect x="88" y="116" width="524" height="232" rx="24" fill="url(#boardIn)"/>
+  <rect x="88" y="116" width="524" height="232" rx="24" fill="url(#g-boardIn)"/>
   <path d="M120 116 V348 M580 116 V348" stroke="#dfc9a0" stroke-width="3" opacity=".8"/>`;
 
   b += seeds(212, 236, 74, 56, 26, 7);
@@ -256,11 +256,11 @@ function platePrep() {
 
 function bandKitchen() {
   let b = `<defs>
-    <linearGradient id="kitBg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="g-kitBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f2efe4"/><stop offset="1" stop-color="#e6e4d4"/>
     </linearGradient>
   </defs>
-  <rect width="700" height="700" fill="url(#kitBg)"/>
+  <rect width="700" height="700" fill="url(#g-kitBg)"/>
   <rect y="470" width="700" height="230" fill="#e3dfd0"/>
   ${shadow(350, 610, 280, 26, 0.12)}
   <rect x="60" y="70" width="580" height="560" rx="34" fill="${P.board}"/>
@@ -285,17 +285,17 @@ function bandKitchen() {
 
 function ogCard() {
   let b = `<defs>
-    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="g-ogBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8f7f1"/><stop offset="1" stop-color="#eef1e6"/>
     </linearGradient>
-    <linearGradient id="ogArch" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="g-ogArch" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#dfe7d1"/><stop offset="1" stop-color="#cfdabb"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#g-ogBg)"/>
   ${archClip("ogArchClip", 690, 60, 450, 510, 205)}
-  <g clip-path="url(#ogArchClip)">
-    <rect x="690" y="60" width="450" height="510" fill="url(#ogArch)"/>
+  <g clip-path="url(#c-ogArchClip)">
+    <rect x="690" y="60" width="450" height="510" fill="url(#g-ogArch)"/>
     <circle cx="915" cy="330" r="168" fill="#fbf9f2"/>
     <circle cx="915" cy="330" r="146" fill="#ffffff"/>
     ${seeds(915, 330, 96, 78, 30, 51)}

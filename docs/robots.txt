@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+
+# The site is in closed local-network testing. Search indexing stays off
+# until the public launch, when this file becomes:
+#
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://slimsprint.ru/sitemap.xml

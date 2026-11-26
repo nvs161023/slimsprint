@@ -1,0 +1,229 @@
+/* SlimSprint — legal pages (policy, consent, offer).
+   Kept separate from the landing so long documents stay readable. */
+
+.legal-header {
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7de;
+  background: #fffefa;
+}
+
+.legal-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legal-header a.back {
+  font-size: 13px;
+  color: #405a45;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.legal-header a.back:hover { text-decoration: underline; }
+
+.legal-header .meta {
+  font-size: 12px;
+  color: #68736a;
+}
+
+.legal-main {
+  width: min(860px, calc(100% - 40px));
+  margin: 40px auto 72px;
+  padding: 44px;
+  background: #fffefa;
+  border-radius: 24px;
+  border: 1px solid #e5e7de;
+}
+
+.legal-main h1 {
+  font: 600 clamp(28px, 3.4vw, 38px)/1.15 "Manrope", "Segoe UI", Arial, sans-serif;
+  letter-spacing: -.03em;
+  margin: 0 0 8px;
+}
+
+.legal-main .doc-meta {
+  font-size: 13px;
+  color: #536052;
+  margin: 0 0 28px;
+}
+
+.legal-main h2 {
+  font: 700 20px/1.3 "Manrope", "Segoe UI", Arial, sans-serif;
+  letter-spacing: -.02em;
+  margin: 34px 0 10px;
+}
+
+.legal-main h3 {
+  font: 700 16px/1.35 "Manrope", "Segoe UI", Arial, sans-serif;
+  margin: 22px 0 8px;
+}
+
+.legal-main p,
+.legal-main li {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #35443a;
+}
+
+.legal-main p { margin: 0 0 12px; }
+
+.legal-main ul,
+.legal-main ol { margin: 0 0 14px; padding-left: 22px; }
+
+.legal-main li { margin-bottom: 6px; }
+
+.legal-main a { color: #405a45; }
+
+.legal-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 18px;
+  font-size: 14px;
+}
+
+.legal-main th,
+.legal-main td {
+  border: 1px solid #e5e7de;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-main th { background: #f1f3eb; font-weight: 700; }
+
+.legal-empty {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff2d9;
+  color: #654b1c;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.legal-consent-box {
+  margin: 20px 0;
+  padding: 18px 20px;
+  border: 1px solid #dce2d7;
+  border-radius: 16px;
+  background: #fbfcf8;
+}
+
+.legal-consent-box p:last-child { margin-bottom: 0; }
+
+/* Operator block inside the page footer */
+.footer {
+  padding: 34px 0;
+  border-top: 1px solid #e5e7de;
+}
+
+.footer .wrap {
+  width: min(1160px, calc(100% - 48px));
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-row .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font: 800 20px "Manrope", "Segoe UI", Arial, sans-serif;
+  letter-spacing: -.06em;
+  color: #202a22;
+}
+
+.footer-row .brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  background: #405a45;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font: 700 16px "Manrope", "Segoe UI", Arial, sans-serif;
+}
+
+.footer-row small,
+.footer-links a { font-size: 12px; color: #616d63; }
+
+.footer-operator { display: grid; gap: 2px; }
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links a { text-decoration: none; }
+
+.footer-links a:hover { color: #405a45; text-decoration: underline; }
+
+.operator {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px dashed #e5e7de;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #536052;
+}
+
+.operator p { margin: 0; }
+
+.operator-name { font-weight: 700; color: #202a22; }
+
+.operator-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  margin: 6px 0 0;
+}
+
+.operator-details dt {
+  font-weight: 700;
+  color: #405a45;
+  margin-right: 4px;
+}
+
+.operator-details dd { margin: 0 12px 0 0; }
+
+.operator-details a { color: #405a45; }
+
+.operator-note {
+  margin-top: 10px !important;
+  max-width: 720px;
+  color: #68736a;
+}
+
+@media (max-width: 600px) {
+  .legal-main {
+    padding: 24px 18px;
+    margin: 20px auto 48px;
+    border-radius: 16px;
+  }
+  .legal-main table { font-size: 13px; }
+  .legal-main th,
+  .legal-main td { padding: 8px 9px; }
+}

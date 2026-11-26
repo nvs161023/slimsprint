@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SlimSprint">
+  <rect width="64" height="64" rx="16" fill="#405a45"/>
+  <path d="M43 23c-2.2 7.4-7.4 12.4-15 14.4M20 45c6.2-1.6 11-5 14.2-9.8" stroke="#dce7c9" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <circle cx="43" cy="22" r="4.2" fill="#dce7c9"/>
+</svg>

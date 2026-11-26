@@ -1,0 +1,39 @@
+# Legal content for docs/*.html placeholders.
+#
+# Every {{PLACEHOLDER}} in docs/*.html is resolved from this file.
+# After editing, run:
+#
+#   node scripts/build-legal.mjs
+#
+# The build refuses to finish while a REQUIRED value is empty, so an
+# unfinished document cannot be published by accident.
+#
+# Operator identity is public: it is shown on the site itself.
+# Do not put passwords, tokens or passport data in this file.
+
+REQUIRED=SITE_URL,OPERATOR_NAME,OPERATOR_STATUS,OPERATOR_INN,OPERATOR_EMAIL,POLICY_DATE,POLICY_VERSION,CONSENT_DATE,CONSENT_VERSION
+
+# Site
+SITE_URL=https://slimsprint.ru
+OPERATOR_SITE=slimsprint.ru
+
+# Operator (самозанятый)
+OPERATOR_NAME=Накоряков Вадим Сергеевич
+OPERATOR_STATUS=Самозанятый, плательщик налога на профессиональный доход
+OPERATOR_INN=531603515195
+OPERATOR_EMAIL=nvs16@ya.ru
+# Почтового адреса для корреспонденции пока нет: описание ниже объясняет,
+# что подставляется вместо него. Заполните, когда решите публиковать адрес.
+OPERATOR_ADDRESS=по запросу на адрес электронной почты оператора
+
+# Document versions
+POLICY_DATE=26.11.2026
+POLICY_VERSION=1.0
+CONSENT_DATE=26.11.2026
+CONSENT_VERSION=1.0
+
+# Processing details
+STORAGE_TERM=12 месяцев с момента последнего взаимодействия
+FORM_SERVICE=Яндекс Формы (сервис Яндекс, Российская Федерация)
+HOSTING_PROVIDER=хостинг статических сайтов в Российской Федерации
+ANALYTICS_SERVICES=не подключены

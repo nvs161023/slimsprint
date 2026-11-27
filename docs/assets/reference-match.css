@@ -520,3 +520,15 @@ main{background:#fcf5ec!important}
   .shopping-card-image{width:48%!important;height:70%!important;right:-10px!important;bottom:-7px!important}
   .shopping-card:after{background:linear-gradient(90deg,#e9ecd9 0%,#e9ecd9ee 55%,transparent 100%)!important}
 }
+
+/* Match reference vertical rhythm in the menu row */
+.weekly-menu-panel{min-height:326px!important}
+.weekly-meals{min-height:215px!important}
+.week-meal{height:100%!important}
+.week-meal-info{flex:1!important}
+.shopping-card{min-height:326px!important}
+@media(max-width:850px){
+  .weekly-menu-panel{min-height:0!important}
+  .weekly-meals{min-height:0!important}
+  .shopping-card{min-height:260px!important}
+}

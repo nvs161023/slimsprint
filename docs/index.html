@@ -28,12 +28,13 @@
 <link rel="stylesheet" href="assets/premium.css?v=20261127b">
 <link rel="stylesheet" href="assets/editorial-refresh.css?v=20261127b">
 <link rel="stylesheet" href="assets/reference-match.css?v=20261127l">
+<link rel="stylesheet" href="assets/readable.css">
 </head>
 <body class="has-action-bar">
 <a class="skip-link" href="#top">Перейти к содержанию</a>
 <header class="header"><div class="wrap nav">
 <a class="brand" href="#top" aria-label="SlimSprint — на главную"><span class="brand-mark">s</span>SlimSprint</a>
-<nav class="nav-links" aria-label="Основная навигация"><a href="#approach">Подход</a><a href="#menu">Пример меню</a><a href="#shopping">Закупки</a><a href="#cabinet">Кабинет</a><a href="#how">Как это работает</a><a href="#price">Условия</a><a href="#faq">Вопросы</a></nav>
+<nav class="nav-links" aria-label="Основная навигация"><a href="#approach">Подход</a><a href="#menu">Пример меню</a><a href="#shopping">Закупки</a><a href="#how">Как это работает</a><a href="#price">Условия</a><a href="#faq">Вопросы</a></nav>
 <a class="nav-cta" href="#lead-form">Узнать о запуске <span aria-hidden="true">↗</span></a>
 </div></header>
 <main id="top">
@@ -53,7 +54,7 @@
 <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></div><strong>Гибкий подход</strong><span>без жёстких правил</span></div>
 </section><section class="reference-menu-zone" id="menu"><div class="wrap reference-menu-grid">
 <div class="menu-intro reveal"><span class="eyebrow">Пример меню</span><h2>Пример меню<br>на 30 дней</h2><p>Вкусно, разнообразно, сбалансировано</p>
-<ul class="menu-checks"><li><i>✓</i><span>Завтраки, обеды и ужины</span></li><li><i>✓</i><span>Понятные порции</span></li><li><i>✓</i><span>Простые рецепты</span></li><li><i>✓</i><span>Один свободный приём пищи в неделю</span></li></ul><a class="btn" href="#cabinet">Узнать больше <span aria-hidden="true">→</span></a></div>
+<ul class="menu-checks"><li><i>✓</i><span>Завтраки, обеды и ужины</span></li><li><i>✓</i><span>Понятные порции</span></li><li><i>✓</i><span>Простые рецепты</span></li><li><i>✓</i><span>Один свободный приём пищи в неделю</span></li></ul></div>
 <div class="weekly-menu-panel reveal" aria-label="Пример меню на неделю">
 <div class="weekly-menu-top"><span class="week-caption">7 дней из программы</span><span class="week-subtitle">Пример одного дня</span></div>
 <div class="day-tabs" role="tablist" aria-label="Выбрать день меню">
@@ -65,21 +66,50 @@
 <article class="week-meal" data-meal="2"><div class="week-meal-image"><img src="assets/img/menu/yogurt-granola.webp" alt="Йогурт с ягодами и гранолой" loading="lazy"><span class="meal-pill">Перекус</span></div><div class="week-meal-info"><strong data-name>Йогурт с ягодами</strong><span data-desc>и гранолой</span><small><span data-kcal>150 ккал</span></small></div></article>
 <article class="week-meal" data-meal="3"><div class="week-meal-image"><img src="assets/img/menu/salmon-vegetables.webp" alt="Лосось с овощами и зеленью" loading="lazy"><span class="meal-pill">Ужин</span></div><div class="week-meal-info"><strong data-name>Лосось с овощами</strong><span data-desc>и зеленью</span><small><span data-kcal>380 ккал</span></small></div></article>
 </div><p class="menu-disclaimer">Блюда и калорийность приведены для примера.</p></div>
-<aside class="shopping-card reveal" id="shopping"><div class="shopping-card-copy"><span class="eyebrow">План закупок</span><h2>План закупок<br>на неделю</h2><p>Точный список продуктов с удобной разбивкой по категориям</p>
-<div class="shopping-category-list"><div><span class="shop-emoji">🌿</span>Овощи и зелень</div><div><span class="shop-emoji">🍓</span>Фрукты и ягоды</div><div><span class="shop-emoji">🥩</span>Белковые продукты</div><div><span class="shop-emoji">🌾</span>Крупы и гарниры</div></div>
-<a class="btn shopping-cta" href="#cabinet">Скачать пример <span aria-hidden="true">→</span></a></div><img class="shopping-card-image" src="assets/img/grocery-bag.webp" alt="Бумажный пакет с овощами и продуктами для недельного меню" loading="lazy" decoding="async"></aside>
-</div></section><section class="section reference-how" id="how"><div class="wrap">
+</div></section>
+<section class="shopping-example" id="shopping" aria-labelledby="shopping-title">
+  <div class="wrap shopping-example-layout">
+    <div class="shopping-example-intro" id="cabinet">
+      <h2 id="shopping-title">План закупок на неделю</h2>
+      <p>Пример для одного человека. Отмечайте то, что уже купили.</p>
+    </div>
+    <div class="shopping-checklist">
+      <fieldset><legend>Овощи и зелень</legend>
+        <label><input type="checkbox"><span>Помидоры</span><span class="shopping-quantity">600 г</span></label>
+        <label><input type="checkbox"><span>Огурцы</span><span class="shopping-quantity">500 г</span></label>
+        <label><input type="checkbox"><span>Морковь</span><span class="shopping-quantity">400 г</span></label>
+      </fieldset>
+      <fieldset><legend>Фрукты и ягоды</legend>
+        <label><input type="checkbox"><span>Яблоки</span><span class="shopping-quantity">4 шт.</span></label>
+        <label><input type="checkbox"><span>Бананы</span><span class="shopping-quantity">3 шт.</span></label>
+        <label><input type="checkbox"><span>Ягоды</span><span class="shopping-quantity">250 г</span></label>
+      </fieldset>
+      <fieldset><legend>Белковые продукты</legend>
+        <label><input type="checkbox"><span>Куриная грудка</span><span class="shopping-quantity">700 г</span></label>
+        <label><input type="checkbox"><span>Лосось</span><span class="shopping-quantity">400 г</span></label>
+        <label><input type="checkbox"><span>Яйца</span><span class="shopping-quantity">10 шт.</span></label>
+        <label><input type="checkbox"><span>Творог</span><span class="shopping-quantity">400 г</span></label>
+      </fieldset>
+      <fieldset><legend>Крупы и бакалея</legend>
+        <label><input type="checkbox"><span>Овсянка</span><span class="shopping-quantity">400 г</span></label>
+        <label><input type="checkbox"><span>Гречка</span><span class="shopping-quantity">400 г</span></label>
+        <label><input type="checkbox"><span>Рис</span><span class="shopping-quantity">350 г</span></label>
+      </fieldset>
+      <p class="shopping-example-note">В персональном плане количество зависит от меню и размера порций.</p>
+    </div>
+  </div>
+</section><section class="section reference-how" id="how"><div class="wrap">
 <div class="how-heading"><span class="eyebrow">Как это работает</span><h2>Всего 3 простых шага</h2></div>
 <div class="how-layout">
 <div class="how-steps">
-<article class="how-step"><div class="step-illustration"><span class="step-number">1</span><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="10" width="24" height="30" rx="3"/><path d="M19 10V7h10v3M18 19h12M18 25h12M18 31h8"/></svg></div><h3>Оставьте заявку</h3><p>Это займёт меньше минуты</p></article>
+<article class="how-step"><div class="step-illustration"><span class="step-number">1</span><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="10" width="24" height="30" rx="3"/><path d="M19 10V7h10v3M18 19h12M18 25h12M18 31h8"/></svg></div><h3>Оставьте заявку</h3><p>Расскажите о предпочтениях и распорядке дня</p></article>
 <span class="step-arrow" aria-hidden="true">→</span>
-<article class="how-step"><div class="step-illustration"><span class="step-number">2</span><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="4"/><path d="M16 7v9M32 7v9M8 20h32M16 26h5M27 26h5M16 32h5"/></svg></div><h3>Получите план</h3><p>С персональным меню на 30 дней</p></article>
+<article class="how-step"><div class="step-illustration"><span class="step-number">2</span><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="4"/><path d="M16 7v9M32 7v9M8 20h32M16 26h5M27 26h5M16 32h5"/></svg></div><h3>Получите план</h3><p>Меню на 30 дней, рецепты и список покупок</p></article>
 <span class="step-arrow" aria-hidden="true">→</span>
-<article class="how-step"><div class="step-illustration"><span class="step-number">3</span><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M17 20h.1M31 20h.1M17 29c4 5 10 5 14 0"/></svg></div><h3>Следуйте плану</h3><p>И наслаждайтесь результатом</p></article>
+<article class="how-step"><div class="step-illustration"><span class="step-number">3</span><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M17 20h.1M31 20h.1M17 29c4 5 10 5 14 0"/></svg></div><h3>Следуйте плану</h3><p>Подстройте время приёмов пищи под свой день</p></article>
 </div>
 <div class="how-visual">
-<div class="phone-mock"><div class="phone-notch"></div><div class="phone-screen">
+<div class="phone-mock" aria-hidden="true"><div class="phone-notch"></div><div class="phone-screen">
 <div class="phone-brand"><span class="phone-leaf">◒</span> SlimSprint</div>
 <h3>Ваш план на сегодня</h3>
 <div class="phone-meal"><img src="assets/img/chicken-quinoa-preview.webp" alt="Куриное филе с киноа и овощами" loading="lazy"><div><strong>Обед</strong><small>Куриное филе с киноа и овощами</small></div></div>
@@ -99,14 +129,7 @@
 <div class="band-image reveal"><img src="assets/img/weekly-meal-plan.webp" width="1000" height="1000" alt="Открытый планер с меню на неделю и списком покупок рядом с продуктами" loading="lazy" decoding="async"></div>
 <div class="band-copy reveal"><span class="eyebrow">Система вместо хаоса</span><h2>Хороший план снимает лишние вопросы.</h2><p>Когда меню и покупки продуманы заранее, остаётся меньше поводов откладывать заботу о себе на завтра. SlimSprint поможет организовать питание, а не превратить его в ещё одну работу.</p>
 <ul class="check-list"><li><span class="check">✓</span><span>Персональный план с учётом исходных данных и предпочтений</span></li><li><span class="check">✓</span><span>Рецепты с понятными ингредиентами и последовательностью приготовления</span></li><li><span class="check">✓</span><span>Список покупок, чтобы проще планировать неделю</span></li><li><span class="check">✓</span><span>Гибкий график приёмов пищи без жёсткой привязки ко времени</span></li></ul>
-</div></div></section><section class="section" id="cabinet"><div class="wrap">
-<div class="section-head reveal"><span class="eyebrow">Как это будет выглядеть</span><h2>План на неделю и список покупок — в одном месте.</h2><p class="section-intro">Так задуман личный кабинет: меню на семь дней с четырьмя приёмами пищи и свободным приёмом в субботу, а под ним — готовый список покупок по категориям с суммами под ваши порции.</p></div>
-<div class="cabinet">
-<figure class="cabinet-figure reveal"><img src="assets/img/menu-week-premium.svg" width="1200" height="740" alt="Пример меню на неделю в интерфейсе SlimSprint" loading="lazy" decoding="async"><figcaption><strong>Меню на неделю</strong>Семь дней, четыре приёма пищи, переключение недель и выделенный свободный приём пищи. Отсюда блюдо можно заменить или посмотреть рецепт.</figcaption></figure>
-<figure class="cabinet-figure reveal"><img src="assets/img/shopping-week-premium.svg" width="1000" height="760" alt="Пример недельного списка покупок по категориям" loading="lazy" decoding="async"><figcaption><strong>Список покупок</strong>Собирается автоматически из выбранного меню: количества, категории, отметки о покупке и напоминание, что при замене блюда список пересчитывается.</figcaption></figure>
-</div>
-<p class="menu-foot">Это макет интерфейса, а не действующий кабинет. Блюда и количества приведены как пример.</p>
-</div></section><section class="section"><div class="wrap rhythm">
+</div></div></section><section class="section"><div class="wrap rhythm">
 <div class="reveal"><span class="eyebrow">Под твой распорядок</span><h2>Не существует одного удобного графика для всех.</h2><p>Кому-то комфортно есть трижды в день, кому-то нужны перекусы. В SlimSprint можно будет выбрать один из четырёх режимов и не подгонять жизнь под условные часы.</p><p>Порции и калорийность предполагается рассчитывать индивидуально, а не назначать одинаковыми для всех.</p></div>
 <div class="rhythm-card reveal"><div class="rhythm-row"><span>3 основных приёма пищи</span><span>Базовый режим</span></div><div class="rhythm-row"><span>3 приёма + 1 перекус</span><span>Лёгкий перекус</span></div><div class="rhythm-row"><span>3 приёма + 2 перекуса</span><span>Дополнительная гибкость</span></div><div class="rhythm-row"><span>3 приёма + 3 перекуса</span><span>Чаще небольшими порциями</span></div></div>
 </div></section><section class="section"><div class="wrap"><div class="free-meal reveal"><div><span class="eyebrow">Место для любимого</span><h2>В меню будет место для свободы.</h2><p>Один свободный приём пищи в неделю: выбираешь блюдо, которое хочется. Это не целый свободный день и не повод переедать или что-то компенсировать. После него просто возвращаешься к своему обычному плану.</p></div><a class="btn" href="#lead-form">Следить за запуском ↗</a></div></div></section><section class="section faq" id="faq"><div class="wrap faq-grid"><div class="reveal"><span class="eyebrow">Честно о важном</span><h2>Частые вопросы.</h2><p class="section-intro">Мы не обещаем волшебных результатов. Наша задача — сделать организацию питания понятнее и удобнее.</p></div>
@@ -135,9 +158,6 @@
 
 
 
-<section class="section" id="steps-more"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Всё по шагам</span><h2>План, который начинается с твоих привычек.</h2></div>
-<div class="steps"><article class="step reveal"><strong>ШАГ 01</strong><h3>Рассказываешь о себе</h3><p>Предпочтения, распорядок дня, желаемая частота питания и другие важные исходные данные.</p></article><article class="step reveal"><strong>ШАГ 02</strong><h3>Получаешь свой план</h3><p>Персональное меню на 30 дней, рецепты и список покупок — так задумана будущая программа.</p></article><article class="step reveal"><strong>ШАГ 03</strong><h3>Следуешь в своём ритме</h3><p>Используешь план как ориентир и адаптируешь время приёмов пищи под повседневную жизнь.</p></article></div>
-</div></section>
 
 <!-- Temporarily paused while the site is tested in the local network only.
      The previous FormSubmit form is archived in form-backup.html. -->

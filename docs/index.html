@@ -27,7 +27,7 @@
 </style>
 <link rel="stylesheet" href="assets/premium.css?v=20261127b">
 <link rel="stylesheet" href="assets/editorial-refresh.css?v=20261127b">
-<link rel="stylesheet" href="assets/reference-match.css?v=20261127i">
+<link rel="stylesheet" href="assets/reference-match.css?v=20261127j">
 </head>
 <body class="has-action-bar">
 <a class="skip-link" href="#top">Перейти к содержанию</a>
@@ -200,63 +200,218 @@
 })();
 
   // Interactive seven-day sample menu: tabs update the four meal cards in place.
-  var mealPhotos = {
-    oatmeal: "https://images.unsplash.com/photo-1686344234276-dc3ac6f284ff?auto=format&fit=crop&w=700&q=85",
-    chicken: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=85",
-    yogurt: "https://images.unsplash.com/photo-1648912607168-88b8db633771?auto=format&fit=crop&w=700&q=85",
-    salmon: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=85",
-    salad: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85",
-    banana: "https://images.unsplash.com/photo-1769479516223-e7209638915f?auto=format&fit=crop&w=700&q=85",
-    fish: "https://images.unsplash.com/photo-1676300185165-3f543c1fcb72?auto=format&fit=crop&w=700&q=85",
-    eggs: "https://images.unsplash.com/photo-1559332167-dd24746aa6f5?auto=format&fit=crop&w=700&q=85",
-    syrniki: "https://images.unsplash.com/photo-1682219179121-36821753748d?auto=format&fit=crop&w=700&q=85",
-    tofu: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
-  };
-  // Every menu item owns its photo. Keep the photo, title and description together.
   var menuDays = [
-    [
-      {n:"Овсяная каша",d:"с ягодами",k:"320 ккал",a:"Овсяная каша с ягодами",img:mealPhotos.oatmeal},
-      {n:"Куриная грудка",d:"с рисом и овощами",k:"420 ккал",a:"Куриная грудка с рисом и овощами",img:mealPhotos.chicken},
-      {n:"Йогурт с ягодами",d:"и гранолой",k:"150 ккал",a:"Йогурт с ягодами и гранолой",img:mealPhotos.yogurt},
-      {n:"Лосось с овощами",d:"и зеленью",k:"380 ккал",a:"Лосось с овощами и зеленью",img:mealPhotos.salmon}
-    ],
-    [
-      {n:"Творог с ягодами",d:"и мёдом",k:"300 ккал",a:"Творог с ягодами",img:mealPhotos.yogurt},
-      {n:"Салат с авокадо",d:"и свежими овощами",k:"410 ккал",a:"Салат с авокадо и свежими овощами",img:mealPhotos.salad},
-      {n:"Банан и гранола",d:"с орехами",k:"170 ккал",a:"Банан, гранола и орехи",img:mealPhotos.banana},
-      {n:"Рыба с брокколи",d:"и лимоном",k:"365 ккал",a:"Рыба с брокколи и лимоном",img:mealPhotos.fish}
-    ],
-    [
-      {n:"Яйца и тост",d:"с томатами",k:"315 ккал",a:"Яйца, тост и томаты",img:mealPhotos.eggs},
-      {n:"Куриная грудка",d:"с крупой и овощами",k:"435 ккал",a:"Куриная грудка с крупой и овощами",img:mealPhotos.chicken},
-      {n:"Йогурт с ягодами",d:"лёгкий перекус",k:"140 ккал",a:"Йогурт с ягодами",img:mealPhotos.yogurt},
-      {n:"Курица с овощами",d:"запечённая",k:"390 ккал",a:"Запечённая курица с овощами",img:mealPhotos.chicken}
-    ],
-    [
-      {n:"Овсянка",d:"с ягодами",k:"330 ккал",a:"Овсянка с ягодами",img:mealPhotos.oatmeal},
-      {n:"Лосось",d:"с овощами и зеленью",k:"440 ккал",a:"Лосось с овощами и зеленью",img:mealPhotos.salmon},
-      {n:"Йогурт с гранолой",d:"и клубникой",k:"180 ккал",a:"Йогурт с гранолой и клубникой",img:mealPhotos.yogurt},
-      {n:"Курица",d:"с запечёнными овощами",k:"370 ккал",a:"Курица с запечёнными овощами",img:mealPhotos.chicken}
-    ],
-    [
-      {n:"Сырники",d:"с ягодами",k:"340 ккал",a:"Сырники с ягодами",img:mealPhotos.syrniki},
-      {n:"Салат с овощами",d:"и авокадо",k:"425 ккал",a:"Салат со свежими овощами и авокадо",img:mealPhotos.salad},
-      {n:"Банан и гранола",d:"с орехами",k:"190 ккал",a:"Банан, гранола и орехи",img:mealPhotos.banana},
-      {n:"Рыба",d:"с овощами",k:"360 ккал",a:"Рыба с овощами",img:mealPhotos.fish}
-    ],
-    [
-      {n:"Йогурт-боул",d:"с овсянкой и ягодами",k:"310 ккал",a:"Йогурт с овсянкой и ягодами",img:mealPhotos.yogurt},
-      {n:"Курица",d:"с рисом и салатом",k:"430 ккал",a:"Курица с рисом и салатом",img:mealPhotos.chicken},
-      {n:"Творог с ягодами",d:"свежий",k:"165 ккал",a:"Творог с ягодами",img:mealPhotos.yogurt},
-      {n:"Лосось",d:"с овощами",k:"385 ккал",a:"Лосось с овощами",img:mealPhotos.salmon}
-    ],
-    [
-      {n:"Яйца с тостом",d:"и томатами",k:"300 ккал",a:"Яйца с тостом и томатами",img:mealPhotos.eggs},
-      {n:"Боул с тофу",d:"и овощами",k:"415 ккал",a:"Боул с тофу и овощами",img:mealPhotos.tofu},
-      {n:"Ягоды с йогуртом",d:"натуральным",k:"155 ккал",a:"Ягоды с натуральным йогуртом",img:mealPhotos.yogurt},
-      {n:"Курица",d:"с овощами и зеленью",k:"375 ккал",a:"Курица с овощами и зеленью",img:mealPhotos.chicken}
-    ]
-  ];
+  [
+    {
+      "n": "Овсяная каша",
+      "d": "с ягодами",
+      "k": "320 ккал",
+      "a": "Овсяная каша с ягодами",
+      "img": "https://images.unsplash.com/photo-1686344234276-dc3ac6f284ff?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Куриная грудка",
+      "d": "с рисом и овощами",
+      "k": "420 ккал",
+      "a": "Куриная грудка с рисом и овощами",
+      "img": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Йогурт с ягодами",
+      "d": "и гранолой",
+      "k": "150 ккал",
+      "a": "Йогурт с ягодами и гранолой",
+      "img": "https://images.unsplash.com/photo-1648912607168-88b8db633771?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Лосось с овощами",
+      "d": "и зеленью",
+      "k": "380 ккал",
+      "a": "Лосось с овощами и зеленью",
+      "img": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Творог с персиком",
+      "d": "и семенами",
+      "k": "305 ккал",
+      "a": "Творог с персиком и семенами",
+      "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Индейка с булгуром",
+      "d": "и салатом",
+      "k": "430 ккал",
+      "a": "Индейка с булгуром и салатом",
+      "img": "https://images.unsplash.com/photo-1769479516223-e7209638915f?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Яблоко с миндалём",
+      "d": "и корицей",
+      "k": "180 ккал",
+      "a": "Яблоко с миндалём и корицей",
+      "img": "https://images.unsplash.com/photo-1676300185165-3f543c1fcb72?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Треска с фасолью",
+      "d": "и лимоном",
+      "k": "365 ккал",
+      "a": "Треска со стручковой фасолью и лимоном",
+      "img": "https://images.unsplash.com/photo-1559332167-dd24746aa6f5?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Омлет со шпинатом",
+      "d": "и томатами",
+      "k": "315 ккал",
+      "a": "Омлет со шпинатом и томатами",
+      "img": "https://images.unsplash.com/photo-1682219179121-36821753748d?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Говядина с гречкой",
+      "d": "и овощами",
+      "k": "445 ккал",
+      "a": "Говядина с гречкой и овощами",
+      "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Смузи с кефиром",
+      "d": "и лесными ягодами",
+      "k": "165 ккал",
+      "a": "Кефирный смузи с лесными ягодами",
+      "img": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Курица с тыквой",
+      "d": "запечённая с травами",
+      "k": "390 ккал",
+      "a": "Запечённая курица с тыквой и травами",
+      "img": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Чиа-пудинг",
+      "d": "с манго",
+      "k": "310 ккал",
+      "a": "Чиа-пудинг с манго",
+      "img": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Салат с тунцом",
+      "d": "и белой фасолью",
+      "k": "415 ккал",
+      "a": "Салат с тунцом и белой фасолью",
+      "img": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Груша с грецким орехом",
+      "d": "и йогуртом",
+      "k": "190 ккал",
+      "a": "Груша с грецким орехом и йогуртом",
+      "img": "https://images.unsplash.com/photo-1505576399274-565b52d4ac71?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Креветки с рисом",
+      "d": "и овощами",
+      "k": "385 ккал",
+      "a": "Креветки с рисом и овощами",
+      "img": "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Сырники",
+      "d": "с ягодным соусом",
+      "k": "340 ккал",
+      "a": "Сырники с ягодным соусом",
+      "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Фрикадельки из индейки",
+      "d": "с картофельным пюре",
+      "k": "435 ккал",
+      "a": "Фрикадельки из индейки с картофельным пюре",
+      "img": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Тост с хумусом",
+      "d": "и морковью",
+      "k": "210 ккал",
+      "a": "Тост с хумусом и морковью",
+      "img": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Форель с кабачком",
+      "d": "и зеленью",
+      "k": "375 ккал",
+      "a": "Форель с кабачком и зеленью",
+      "img": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Тост с авокадо",
+      "d": "и яйцом",
+      "k": "325 ккал",
+      "a": "Тост с авокадо и яйцом",
+      "img": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Чечевичная тарелка",
+      "d": "с овощами",
+      "k": "425 ккал",
+      "a": "Чечевичная тарелка с овощами",
+      "img": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Творог с киви",
+      "d": "и фисташками",
+      "k": "175 ккал",
+      "a": "Творог с киви и фисташками",
+      "img": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Перец с индейкой",
+      "d": "и томатным соусом",
+      "k": "390 ккал",
+      "a": "Перец, фаршированный индейкой",
+      "img": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  [
+    {
+      "n": "Банановые панкейки",
+      "d": "с йогуртом",
+      "k": "335 ккал",
+      "a": "Банановые панкейки с йогуртом",
+      "img": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Курица с киноа",
+      "d": "и табуле",
+      "k": "440 ккал",
+      "a": "Курица с киноа и табуле",
+      "img": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Апельсин с миндалём",
+      "d": "и натуральным йогуртом",
+      "k": "185 ккал",
+      "a": "Апельсин, миндаль и натуральный йогурт",
+      "img": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "n": "Тофу с брокколи",
+      "d": "и кунжутом",
+      "k": "380 ккал",
+      "a": "Тофу с брокколи и кунжутом",
+      "img": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=700&q=85"
+    }
+  ]
+];
   document.querySelectorAll(".week-meal-image img").forEach(function (image) {
     image.onerror = function () { this.onerror = null; this.src = "assets/img/meal-bowl.svg"; };
   });

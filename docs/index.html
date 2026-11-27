@@ -27,7 +27,7 @@
 </style>
 <link rel="stylesheet" href="assets/premium.css?v=20261127b">
 <link rel="stylesheet" href="assets/editorial-refresh.css?v=20261127b">
-<link rel="stylesheet" href="assets/reference-match.css?v=20261127d">
+<link rel="stylesheet" href="assets/reference-match.css?v=20261127e">
 </head>
 <body class="has-action-bar">
 <a class="skip-link" href="#top">Перейти к содержанию</a>
@@ -286,7 +286,8 @@
         card.querySelector("[data-kcal]").textContent = item.k;
         var mealImage = card.querySelector(".week-meal-image img");
         mealImage.alt = item.a;
-        mealImage.src = item.img;\n        mealImage.onerror = function () { this.onerror = null; this.src = "assets/img/meal-bowl.svg"; };
+        mealImage.src = item.img;
+        mealImage.onerror = function () { this.onerror = null; this.src = "assets/img/meal-bowl.svg"; };
       });
       var caption = document.querySelector(".week-subtitle");
       if (caption) caption.textContent = "Меню на день " + (day + 1);

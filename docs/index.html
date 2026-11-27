@@ -27,7 +27,7 @@
 </style>
 <link rel="stylesheet" href="assets/premium.css?v=20261127b">
 <link rel="stylesheet" href="assets/editorial-refresh.css?v=20261127b">
-<link rel="stylesheet" href="assets/reference-match.css?v=20261127b">
+<link rel="stylesheet" href="assets/reference-match.css?v=20261127c">
 </head>
 <body class="has-action-bar">
 <a class="skip-link" href="#top">Перейти к содержанию</a>
@@ -44,7 +44,7 @@
 <div class="hero-actions"><a class="btn" href="#lead-form">Оставить заявку <span aria-hidden="true">→</span></a><a class="btn btn-light hero-play" href="#how"><span class="play-icon" aria-hidden="true">▶</span> Как это устроено</a></div>
 <div class="micro-note"><span class="micro-shield" aria-hidden="true">✓</span> Предварительная заявка. Оплата позже</div>
 </div>
-<div class="hero-visual" aria-label="Премиальное блюдо из лосося, овощей и киноа"><img class="hero-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=90" width="1800" height="1200" alt="Лосось с овощами, зеленью и крупой на светлой керамической тарелке" fetchpriority="high" decoding="async"><div class="floating-tag">30 дней<br>понятного<br>питания</div></div>
+<div class="hero-visual" aria-label="Премиальное блюдо из лосося, овощей и киноа"><img class="hero-img" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1800&q=90" width="1800" height="1200" alt="Лосось с овощами, зеленью и крупой на светлой керамической тарелке" fetchpriority="high" decoding="async"><div class="floating-tag">30 дней<br>понятного<br>питания</div></div>
 </div></section><section class="feature-strip" aria-label="Что входит в SlimSprint">
 <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/></svg></div><strong>30 дней</strong><span>готового плана</span></div>
 <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7M11 3v7M7 7h4M9 10v11M17 3v18M17 3c-2 3-2 6 0 8"/></svg></div><strong>4 режима питания</strong><span>под твой ритм</span></div>
@@ -210,12 +210,50 @@
 })();
 
   // Interactive seven-day sample menu: tabs update the four meal cards in place.
-  var menuPhotos = [
-    "https://images.unsplash.com/photo-1648061930045-e9fdd171c052?auto=format&fit=crop&w=650&q=82",
-    "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=650&q=82",
-    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=82",
-    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=650&q=82"
-  ];
+  var menuPhotosByDay = [
+  [
+    "https://images.unsplash.com/photo-1648061930045-e9fdd171c052?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=650&q=85"
+  ],
+  [
+    "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=85",
+    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=650&q=85"
+  ]
+];
   var menuDays = [
     [{n:"Овсяная каша",d:"с ягодами",k:"320 ккал",a:"Овсяная каша с ягодами"},{n:"Куриная грудка",d:"с киноа и овощами",k:"420 ккал",a:"Куриная грудка с киноа и овощами"},{n:"Греческий йогурт",d:"с ягодами",k:"150 ккал",a:"Греческий йогурт с ягодами"},{n:"Лосось с овощами",d:"на пару",k:"380 ккал",a:"Лосось с овощами"}],
     [{n:"Творожная миска",d:"с бананом",k:"300 ккал",a:"Творог с бананом"},{n:"Салат с индейкой",d:"и авокадо",k:"410 ккал",a:"Салат с индейкой и авокадо"},{n:"Яблоко и йогурт",d:"с корицей",k:"170 ккал",a:"Яблоко и йогурт"},{n:"Запечённая рыба",d:"с брокколи",k:"365 ккал",a:"Рыба с брокколи"}],
@@ -244,7 +282,7 @@
         card.querySelector("[data-kcal]").textContent = item.k;
         var mealImage = card.querySelector(".week-meal-image img");
         mealImage.alt = item.a;
-        mealImage.src = menuPhotos[(day + index) % menuPhotos.length];
+        mealImage.src = menuPhotosByDay[day][index];
       });
       var caption = document.querySelector(".week-subtitle");
       if (caption) caption.textContent = "Меню на день " + (day + 1);

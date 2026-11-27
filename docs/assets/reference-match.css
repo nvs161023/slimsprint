@@ -532,3 +532,18 @@ main{background:#fcf5ec!important}
   .weekly-meals{min-height:0!important}
   .shopping-card{min-height:260px!important}
 }
+
+/* Produce image treatment: bright cutout-like crop aligned to the reference */
+.shopping-card-image{
+  width:72%!important;
+  height:86%!important;
+  right:-24px!important;
+  bottom:-24px!important;
+  object-position:center 58%!important;
+  mix-blend-mode:multiply!important;
+  opacity:.97!important;
+  mask-image:linear-gradient(180deg,transparent 0%,#000 13%,#000 100%)!important;
+}
+@media(max-width:850px){
+  .shopping-card-image{width:52%!important;height:82%!important;right:-10px!important;bottom:-8px!important;object-position:center 58%!important}
+}

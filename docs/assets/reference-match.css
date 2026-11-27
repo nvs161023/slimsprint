@@ -547,3 +547,85 @@ main{background:#fcf5ec!important}
 @media(max-width:850px){
   .shopping-card-image{width:52%!important;height:82%!important;right:-10px!important;bottom:-8px!important;object-position:center 58%!important}
 }
+
+/* SlimSprint polish pass: full-width weekly menu, single footer, refined editorial image */
+.reference-menu-grid{
+  width:min(1450px,calc(100% - 8vw))!important;
+  grid-template-columns:260px minmax(0,1fr) 350px!important;
+  gap:22px!important;
+  align-items:stretch!important;
+}
+.weekly-menu-panel{
+  min-width:0!important;
+  min-height:390px!important;
+  height:100%!important;
+  padding:18px!important;
+  border-radius:26px!important;
+  background:rgba(255,250,242,.94)!important;
+  border:1px solid #e8dccb!important;
+  box-shadow:0 12px 34px rgba(74,58,35,.07)!important;
+}
+.weekly-menu-top{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:12px!important;margin-bottom:12px!important}
+.day-tabs{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:6px!important}
+.day-tab{min-width:0!important;white-space:nowrap!important;padding:9px 3px!important}
+.weekly-meals{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important;min-height:220px!important}
+.week-meal{display:flex!important;flex-direction:column!important;min-width:0!important;height:100%!important;overflow:hidden!important;border-radius:17px!important}
+.week-meal-image{height:clamp(125px,9vw,158px)!important;flex:0 0 auto!important;overflow:hidden!important}
+.week-meal-image img{width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center!important}
+.week-meal-info{display:flex!important;flex-direction:column!important;flex:1 1 auto!important;min-height:105px!important;padding:12px!important}
+.week-meal-info small{margin-top:auto!important;padding-top:12px!important}
+.menu-disclaimer{margin:12px 2px 0!important}
+.shopping-card{min-width:0!important;min-height:390px!important;height:100%!important;overflow:hidden!important;border-radius:26px!important}
+.shopping-card-copy{position:relative!important;z-index:2!important;max-width:78%!important}
+.shopping-card-image{width:82%!important;height:78%!important;right:-28px!important;bottom:-16px!important;object-fit:cover!important;object-position:center!important;mix-blend-mode:multiply!important;opacity:.95!important;mask-image:linear-gradient(180deg,transparent 0%,#000 15%,#000 100%)!important}
+.band-image{height:510px!important;border-radius:30px!important;overflow:hidden!important;background:#e8ecdf!important;box-shadow:0 18px 42px rgba(64,77,52,.10)!important}
+.band-image img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;display:block!important}
+.band-copy h2{color:#1b251e!important}
+.footer-row{align-items:center!important;gap:26px!important}
+.footer-operator{max-width:620px!important;line-height:1.55!important}
+.footer-legal-note{display:block!important;max-width:680px!important;margin-top:8px!important;font-size:10px!important;line-height:1.55!important;color:#788174!important}
+.operator{display:none!important}
+@media(max-width:1250px){
+  .reference-menu-grid{width:calc(100% - 64px)!important;grid-template-columns:240px minmax(0,1fr)!important;gap:18px!important}
+  .weekly-menu-panel{min-height:0!important}
+  .shopping-card{grid-column:1/-1!important;min-height:280px!important;height:auto!important}
+  .shopping-card-copy{max-width:58%!important}
+  .shopping-card-image{width:44%!important;height:100%!important;right:0!important;bottom:0!important;mask-image:linear-gradient(90deg,transparent 0%,#000 25%,#000 100%)!important}
+}
+@media(max-width:850px){
+  .reference-menu-grid{width:calc(100% - 36px)!important;grid-template-columns:minmax(0,1fr)!important;gap:16px!important}
+  .menu-intro{max-width:560px!important}
+  .weekly-menu-panel{padding:14px!important;border-radius:22px!important}
+  .weekly-menu-top{align-items:flex-start!important;flex-wrap:wrap!important}
+  .day-tabs{display:flex!important;overflow-x:auto!important;scrollbar-width:none!important;padding-bottom:3px!important}
+  .day-tabs::-webkit-scrollbar{display:none!important}
+  .day-tab{flex:1 0 68px!important}
+  .weekly-meals{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;min-height:0!important}
+  .week-meal-image{height:clamp(120px,34vw,170px)!important}
+  .week-meal-info{min-height:104px!important;padding:12px!important}
+  .week-meal-info strong{font-size:13px!important}
+  .week-meal-info>span{font-size:11px!important}
+  .shopping-card{grid-column:1!important;min-height:310px!important;padding:22px!important}
+  .shopping-card-copy{max-width:70%!important}
+  .shopping-card-image{width:48%!important;height:88%!important;right:-8px!important;bottom:-8px!important;mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 100%)!important}
+  .band-grid{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}
+  .band-image{height:auto!important;aspect-ratio:1/1!important;max-height:440px!important;border-radius:26px!important}
+  .band-copy h2{font-size:clamp(32px,8vw,44px)!important}
+  .footer-row{align-items:flex-start!important;flex-direction:column!important;gap:18px!important}
+  .footer-operator{max-width:100%!important}
+  .footer-links{flex-wrap:wrap!important;gap:12px 18px!important}
+}
+@media(max-width:480px){
+  .reference-menu-grid{width:calc(100% - 28px)!important}
+  .weekly-menu-panel{padding:11px!important}
+  .weekly-meals{gap:8px!important}
+  .week-meal-image{height:118px!important}
+  .week-meal-info{padding:10px!important}
+  .week-meal-info strong{font-size:12px!important}
+  .week-meal-info>span{font-size:10px!important}
+  .shopping-card{padding:18px!important;min-height:285px!important}
+  .shopping-card-copy{max-width:72%!important}
+  .shopping-card h2{font-size:28px!important}
+  .shopping-card p{font-size:12px!important}
+  .shopping-card-image{width:46%!important;height:80%!important}
+}

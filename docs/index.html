@@ -27,7 +27,7 @@
 </style>
 <link rel="stylesheet" href="assets/premium.css?v=20261127b">
 <link rel="stylesheet" href="assets/editorial-refresh.css?v=20261127b">
-<link rel="stylesheet" href="assets/reference-match.css?v=20261127g">
+<link rel="stylesheet" href="assets/reference-match.css?v=20261127h">
 </head>
 <body class="has-action-bar">
 <a class="skip-link" href="#top">Перейти к содержанию</a>
@@ -44,7 +44,7 @@
 <div class="hero-actions"><a class="btn" href="#lead-form">Оставить заявку <span aria-hidden="true">→</span></a><a class="btn btn-light hero-play" href="#how"><span class="play-icon" aria-hidden="true">▶</span> Как это устроено</a></div>
 <div class="micro-note"><span class="micro-shield" aria-hidden="true">✓</span> Предварительная заявка. Оплата позже</div>
 </div>
-<div class="hero-visual" aria-label="Премиальное блюдо из лосося, овощей и киноа"><img class="hero-img" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1800&q=90" width="1800" height="1200" alt="Лосось с овощами, зеленью и крупой на светлой керамической тарелке" fetchpriority="high" decoding="async"><div class="floating-tag">30 дней<br>понятного<br>питания</div></div>
+<div class="hero-visual" aria-label="Премиальное блюдо из лосося, овощей и киноа"><img class="hero-img" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1800&q=90" width="1800" height="1200" alt="Лосось с овощами, зеленью и крупой на светлой керамической тарелке" onerror="this.onerror=null;this.src=\'assets/img/meal-salmon-premium.svg\'" fetchpriority="high" decoding="async"><div class="floating-tag">30 дней<br>понятного<br>питания</div></div>
 </div></section><section class="feature-strip" aria-label="Что входит в SlimSprint">
 <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/></svg></div><strong>30 дней</strong><span>готового плана</span></div>
 <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7M11 3v7M7 7h4M9 10v11M17 3v18M17 3c-2 3-2 6 0 8"/></svg></div><strong>4 режима питания</strong><span>под твой ритм</span></div>
@@ -67,7 +67,7 @@
 </div><p class="menu-disclaimer">Блюда и калорийность приведены для примера.</p></div>
 <aside class="shopping-card reveal" id="shopping"><div class="shopping-card-copy"><span class="eyebrow">План закупок</span><h2>План закупок<br>на неделю</h2><p>Точный список продуктов с удобной разбивкой по категориям</p>
 <div class="shopping-category-list"><div><span class="shop-emoji">🌿</span>Овощи и зелень</div><div><span class="shop-emoji">🍓</span>Фрукты и ягоды</div><div><span class="shop-emoji">🥩</span>Белковые продукты</div><div><span class="shop-emoji">🌾</span>Крупы и гарниры</div></div>
-<a class="btn shopping-cta" href="#cabinet">Скачать пример <span aria-hidden="true">→</span></a></div><img class="shopping-card-image" src="https://images.pexels.com/photos/31031852/pexels-photo-31031852.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Бумажный пакет с овощами и продуктами для недельного меню" loading="lazy" decoding="async"></aside>
+<a class="btn shopping-cta" href="#cabinet">Скачать пример <span aria-hidden="true">→</span></a></div><img class="shopping-card-image" src="https://images.pexels.com/photos/31031852/pexels-photo-31031852.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Бумажный пакет с овощами и продуктами для недельного меню" onerror="this.onerror=null;this.src=\'assets/img/editorial-produce.svg\'" loading="lazy" decoding="async"></aside>
 </div></section><section class="section reference-how" id="how"><div class="wrap">
 <div class="how-heading"><span class="eyebrow">Как это работает</span><h2>Всего 3 простых шага</h2></div>
 <div class="how-layout">
@@ -267,7 +267,7 @@
       {n:"Курица",d:"с овощами и зеленью",k:"375 ккал",a:"Курица с овощами и зеленью",img:mealPhotos.chicken}
     ]
   ];
-  var dayButtons = document.querySelectorAll(".day-tab");
+  document.querySelectorAll(".week-meal-image img").forEach(function (image) {\n    image.onerror = function () { this.onerror = null; this.src = "assets/img/meal-bowl.svg"; };\n  });\n  var dayButtons = document.querySelectorAll(".day-tab");
   dayButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       var day = Number(button.getAttribute("data-day"));

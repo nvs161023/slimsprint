@@ -136,8 +136,8 @@
 <div class="lead-copy"><span class="eyebrow">Ранний доступ</span><h2>Начни с первого шага к более удобному питанию.</h2><p>SlimSprint находится в разработке. Оставь заявку, чтобы получить информацию о запуске и решить, подходит ли тебе программа.</p><ul class="early-access-benefits"><li>Узнаешь о запуске программы в числе первых.</li><li>Получишь информацию об условиях и стоимости до покупки.</li><li>Сможешь принять решение без предоплаты и обязательств.</li></ul></div>
 <div class="form-card">
 <h3>Записаться на ранний доступ</h3>
-<p>Короткая анкета: имя, способ связи и часовой пояс. Около одной минуты.</p>
-<p><a class="form-submit form-submit--link" id="lead-cta" href="#" rel="noopener">Записаться бесплатно <span aria-hidden="true">↗</span></a></p>
+<p>Перейди в короткую анкету Яндекса и оставь контакт для уведомления о запуске.</p>
+<p><a class="form-submit form-submit--link" id="lead-cta" href="https://forms.yandex.ru/u/6b08764d974ab268136c6522/" rel="noopener">Записаться бесплатно <span aria-hidden="true">↗</span></a></p>
 <p class="form-status" id="form-message" role="status" aria-live="polite"></p>
 <p class="form-foot">Открывается защищённая форма Яндекса. Заявка не оплачивает программу и не создаёт обязательств. Не указывай в форме медицинские сведения. Нажимая кнопку, ты принимаешь <a href="personal-data-consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и <a href="privacy-policy.html" target="_blank" rel="noopener">политику</a>.</p>
 </div>
@@ -207,8 +207,13 @@
       }
     });
   } else if (cta) {
-    var query = window.location.search.replace(/^\?/, "");
-    cta.setAttribute("href", config.yandexFormUrl + (query ? "?" + query : ""));
+    var formUrl = new URL(config.yandexFormUrl);
+    var incoming = new URLSearchParams(window.location.search);
+    ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","utm_id"].forEach(function(key) {
+      var value = incoming.get(key);
+      if (value) formUrl.searchParams.set(key, value);
+    });
+    cta.setAttribute("href", formUrl.href);
   }
 })();
 

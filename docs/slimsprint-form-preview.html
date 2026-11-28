@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="form-action 'none'; connect-src 'self'">
+  <title>Анкета раннего доступа — SlimSprint</title>
+  <style>
+    :root {
+      --paper: #f6f5ef;
+      --white: #fffefa;
+      --ink: #203b29;
+      --muted: #4f6053;
+      --sage: #405a45;
+      --line: #ccd6c6;
+      --error: #942f29;
+      font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; text-underline-offset: .2em; }
+    :focus-visible { outline: 3px solid var(--sage); outline-offset: 4px; }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin-inline: auto; }
+    .header { border-bottom: 1px solid var(--line); }
+    .header .wrap {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -.055em;
+      text-decoration: none;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 11px;
+      background: var(--sage);
+      color: white;
+      font-size: 16px;
+    }
+    .back { font-size: .875rem; }
+    main { padding-block: clamp(24px, 7vw, 88px); }
+    .panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+      align-items: center;
+      gap: clamp(24px, 6vw, 68px);
+      padding: clamp(18px, 5vw, 58px);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: linear-gradient(125deg, #edf0e3, #e0e7d4);
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.25rem, 5.5vw, 4.2rem);
+      line-height: 1.02;
+      letter-spacing: -.063em;
+    }
+    h1 em { font-family: Georgia, serif; font-weight: 400; color: var(--sage); }
+    p { line-height: 1.6; }
+    .intro { margin: 0; max-width: 36ch; color: var(--muted); }
+    .card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: clamp(18px, 3.5vw, 36px);
+      box-shadow: 0 18px 50px #25342512;
+    }
+    .card h2 { margin: 0 0 10px; font-size: 1.4rem; letter-spacing: -.035em; }
+    .notice {
+      margin: 0 0 22px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #f1f3eb;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    fieldset { border: 0; padding: 0; margin: 0; min-inline-size: 0; }
+    .field { margin-bottom: 16px; }
+    .field label { display: block; margin-bottom: 6px; font-weight: 700; }
+    .optional { font-size: .85rem; font-weight: 400; color: var(--muted); }
+    .field input {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid #879986;
+      border-radius: 12px;
+      padding: 11px 13px;
+      background: #fbfcf8;
+      color: var(--ink);
+      font: inherit;
+    }
+    .consent { display: flex; align-items: flex-start; gap: 10px; margin-top: 20px; }
+    .consent input { flex: none; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--sage); }
+    .consent label { font-size: .95rem; line-height: 1.5; cursor: pointer; }
+    .legal { margin: 7px 0 18px 30px; font-size: .85rem; color: var(--muted); }
+    .error { margin: 5px 0 0; font-size: .875rem; color: var(--error); }
+    [aria-invalid="true"] { outline: 2px solid var(--error); outline-offset: 1px; }
+    [aria-invalid="true"]:focus-visible { outline-offset: 4px; }
+    button {
+      width: 100%;
+      min-height: 48px;
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: #304c35;
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover:enabled { background: var(--ink); }
+    button:disabled { opacity: .65; cursor: default; }
+    [aria-busy="true"] button { cursor: wait; }
+    .status { min-height: 1.6em; margin: 10px 0 0; font-size: .9rem; }
+    .status[data-state="error"] { color: var(--error); }
+    @media (max-width: 720px) {
+      .panel { grid-template-columns: minmax(0, 1fr); border-radius: 22px; }
+      .header .wrap { min-height: 62px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="https://slimsprint.ru/" aria-label="SlimSprint — главная"><span class="brand-mark" aria-hidden="true">s</span>SlimSprint</a>
+      <a class="back" href="https://slimsprint.ru/">На главную</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="panel" aria-labelledby="title">
+      <div>
+        <h1 id="title">Ранний <em>доступ</em></h1>
+        <p class="intro">Оставь заявку, чтобы узнать о запуске SlimSprint и условиях программы. Заявка бесплатна и не создаёт обязательств.</p>
+      </div>
+      <div class="card">
+        <h2 id="form-title">Анкета раннего доступа</h2>
+        <p class="notice" id="preview-note">Это предпросмотр. Данные из этой анкеты никуда не отправляются. Для заявки <a href="https://forms.yandex.ru/u/6b08764d974ab268136c6522/">открой действующую Яндекс Форму</a>.</p>
+        <noscript><p>Для проверки полей включи JavaScript.</p></noscript>
+        <!-- После проверки интеграции укажи путь к серверному обработчику на том же сайте. -->
+        <form id="lead-form" method="post" data-endpoint="" aria-labelledby="form-title" novalidate>
+          <fieldset id="lead-fields" disabled>
+            <div class="field">
+              <label for="name">Имя <span class="optional">необязательно</span></label>
+              <input id="name" name="name" autocomplete="given-name" maxlength="100">
+            </div>
+            <div class="field">
+              <label for="email">Электронная почта</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="email-error">
+              <p class="error" id="email-error" hidden></p>
+            </div>
+            <div class="consent">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="legal consent-error">
+              <label for="consent">Я даю согласие на обработку персональных данных</label>
+            </div>
+            <p class="error" id="consent-error" hidden></p>
+            <p class="legal" id="legal"><a href="https://slimsprint.ru/personal-data-consent.html" target="_blank" rel="noopener">Текст согласия</a> · <a href="https://slimsprint.ru/privacy-policy.html" target="_blank" rel="noopener">Политика обработки данных</a></p>
+            <button type="submit" id="submit">Проверить анкету</button>
+          </fieldset>
+        </form>
+        <p class="status" id="status" role="status" aria-atomic="true"></p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const form = document.querySelector('#lead-form');
+    const fields = document.querySelector('#lead-fields');
+    const email = form.elements.email;
+    const consent = form.elements.consent;
+    const submit = document.querySelector('#submit');
+    const statusMessage = document.querySelector('#status');
+    const endpoint = form.dataset.endpoint.trim();
+    const submitLabel = endpoint ? 'Отправить заявку' : 'Проверить анкету';
+
+    function showStatus(message, state = '') {
+      statusMessage.textContent = message;
+      statusMessage.dataset.state = state;
+    }
+
+    function showFieldError(field, message) {
+      const error = document.getElementById(field.id + '-error');
+      error.textContent = message;
+      error.hidden = !message;
+      if (message) {
+        field.setAttribute('aria-invalid', 'true');
+      } else {
+        field.removeAttribute('aria-invalid');
+      }
+    }
+
+    for (const field of [email, consent]) {
+      field.addEventListener('input', () => showFieldError(field, ''));
+    }
+    form.addEventListener('input', () => showStatus(''));
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (fields.disabled) return;
+
+      email.value = email.value.trim();
+      const emailError = email.validity.valueMissing ? 'Укажи электронную почту.'
+        : email.validity.valid ? '' : 'Проверь адрес электронной почты.';
+      const consentError = consent.checked ? '' : 'Подтверди согласие на обработку данных.';
+      showFieldError(email, emailError);
+      showFieldError(consent, consentError);
+
+      if (emailError || consentError) {
+        showStatus('Проверь выделенные поля.', 'error');
+        (emailError ? email : consent).focus();
+        return;
+      }
+      if (!endpoint) {
+        showStatus('Поля заполнены верно. Заявка не отправлена.');
+        return;
+      }
+
+      const payload = {
+        name: form.elements.name.value.trim(),
+        email: email.value,
+        consent: consent.checked,
+      };
+      fields.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      submit.textContent = 'Отправляем…';
+      showStatus('Отправляем заявку…');
+
+      try {
+        const url = new URL(endpoint, window.location.href);
+        if (url.origin !== window.location.origin) throw new Error('Unexpected origin');
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          redirect: 'error',
+          signal: AbortSignal.timeout(12000),
+        });
+        if (!response.ok) throw new Error('Request failed');
+        const result = await response.json();
+        if (result?.accepted !== true) throw new Error('Missing confirmation');
+
+        form.reset();
+        showStatus('Заявка принята. Спасибо!');
+      } catch {
+        showStatus('Не удалось подтвердить отправку. Данные сохранены в полях. Попробуй ещё раз.', 'error');
+      } finally {
+        fields.disabled = false;
+        form.removeAttribute('aria-busy');
+        submit.textContent = submitLabel;
+      }
+    });
+
+    if (endpoint) document.querySelector('#preview-note').hidden = true;
+    submit.textContent = submitLabel;
+    fields.disabled = false;
+  </script>
+</body>
+</html>
